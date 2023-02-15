@@ -10,11 +10,14 @@
 <body>
     <nav>
         <p>View High Scores</p>
-        <p id="countdown"></p>
+        <p id="countdown">Timer: 2:00</p>
     </nav>
-    <h1>Coding Quiz Challenge!</h1>
-    <section>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</section>
-    <button id="start-button">Start Quiz</button>
+    <section>
+    <h1 class="title">Coding Quiz Challenge!</h1>
+    <article id="main-text" style="display:block">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</article>
+    <button id="start-button" type="button" onclick="toggleText()">Start Quiz</button>
+    <p></p>
+    </section>
     <script src="./assets/js/script.js"></script> 
 </body>
 </html>
