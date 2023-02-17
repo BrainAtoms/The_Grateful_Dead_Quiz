@@ -9,21 +9,21 @@
 </head>
 <body>
     <nav>
-        <p>View High Scores</p>
+        <p><a href=scores.html>View High Scores</a></button>
         <p id="countdown">Timer: 2:00</p>
     </nav>
     <section>
     <h1 class="title">Coding Quiz Challenge!</h1>
     <article id="main-text" style="display:block">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</article>
-    <!-- <section id="quiz" style="display:none">
-    <p id="question"></p>
-    <p id="choices"></p>
-        <p class="choice" id="A" onclick="checkAnswer('A')"></p>
-        <p class="choice" id="B" onclick="checkAnswer('B')"></p>
-        <p class="choice" id="C" onclick="checkAnswer('C')"></p>
-        <p class="choice" id="D" onclick="checkAnswer('D')"></p>
-    </section> -->
-    <button id="start-button" type="button" onclick="toggleText()">Start Quiz</button>
+    <section id="choices" style="display:none">
+        <button class="button" id='A'></button> 
+        <button class="button" id='B'></button>
+        <button class="button" id='C'></button>
+        <button class="button" id=D></button>
+        <h2 id="score">Score: 0</h2>
+        <h2 id="result"></h2>
+    </section>
+    <button id="start-button" type="button" onclick="quesh()">Start Quiz</button>
     </section>
     <script src="./assets/js/script.js"></script> 
 </body>

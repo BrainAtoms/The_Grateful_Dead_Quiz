@@ -1,79 +1,106 @@
-var score = 0; 
-var question = `What's up, Doc?`
-var answer = 'Nothing much.'
-// const question = document.getElementById("question");
-// const choiceA = document.getElementById("A");
-// const choiceB = document.getElementById("B");
-// const choiceC = document.getElementById("C");
-// const choiceD = document.getElementById("D");
+const questions = [
+  {
+    question: "Commonly used data types do NOT include?",
+    choices: ["strings", "booleans", "alerts", "numbers"],
+    correctAnswer: "alerts",
+  },
+  {
+    question: "The condition in an if/else statement is enclosed with __________",
+    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+    correctAnswer: "parentheses",
+  },
+  {
+    question: "Arrays in Javascript can be used to store __________",
+    choices: ['numbers and strings', 'other arrays', 'booleans', 'all of the above'],
+    correctAnswer: 'all of the above'
+  },
+  {
+    question: "String values must be enclosed within ______ when being assigned to variables.",
+    choices: ['commas', 'curly brackets', 'quotes', 'parentheses'],
+    correctAnswer: 'quotes'
+  },
+  {
+    question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choices: ['Javascript', 'termina/bash', 'for loops', 'console.log'],
+    correctAnswer: 'console.log'
+  },
+];
 
-// let questions = [
-//     {
-//         question: "What does Html stand for?",
-
-//     }
-// ]
-
-// const lastQuestion = questions.length - 1;
-
-// let runningQuestion = 0; 
-
-// function renderQuestion() {
-//     let q = questions[runningQuestion];
-
-//     question.innerHTML = "<p>"+ q.question +"</p>";
-
-//     choiceA.innerHTML = q.choiceA;
-
-//     choiceB.innerHTML = q.choiceB;
-
-//     choiceC.innerHTML= q.choiceC;
-// }
-
-// function renderProgress() {
-//     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++) {
-//         progress.innerHTML += "<p class='prog' id="+ qIndex +"></p>";
-//     }
-// }
-
-// start.addEventListener("click", startQuiz); 
-
-const startingMinutes = 2; 
-let time = startingMinutes * 60; 
-
-const btnStart = document.getElementById('start-button');
-const countdownEl = document.getElementById('countdown');
+var score = 0;
+var currentQuestion = 0;
+const buttons = document.getElementsByClassName("button");
+const result = document.getElementById("result");
+const scoreEl = document.getElementById("score");
 
 
-btnStart.addEventListener('click', () => {
-    setInterval(updateCountdown, 1000);
-    btnStart.style.display = 'none'; 
-})
+var text = document.getElementById("main-text");
+var choices = document.getElementById("choices");
+var buttonA = document.getElementById("A");
+var buttonB = document.getElementById("B");
+var buttonC = document.getElementById("C");
+var buttonD = document.getElementById("D");
+
+var incorrectAnswers1 = [buttonA, buttonB, buttonD];
+
+const startingMinutes = 2;
+let time = startingMinutes * 60;
+
+const btnStart = document.getElementById("start-button");
+const countdownEl = document.getElementById("countdown");
+
+btnStart.addEventListener("click", () => {
+  setInterval(updateCountdown, 1000);
+  btnStart.style.display = "none";
+});
 
 function updateCountdown() {
-    const minutes = Math.floor(time / 60); 
-    let seconds = time % 60;
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
 
-    seconds = seconds < 10 ? '0' + seconds : seconds; 
+  seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    time = time < 1 ? 1: time
+  time = time < 1 ? 1 : time;
 
-    countdownEl.innerHTML = "Timer:" + ` ${minutes}:${seconds}`; 
-    time--;
+  countdownEl.innerHTML = "Timer:" + ` ${minutes}:${seconds}`;
+  time--;
 }
 
-function toggleText() {
-    var text = document.getElementById("main-text");
-    if (text.style.display === "block") {
-        text.innerHTML = question + ' ' 
-        + "<button class= 'choice'>Nothing much.</button>" 
-        + "<button class= 'choice'>The Sky.</button>"
-        + "<button class= 'choice'>Nunya.</button>"
-    } else {
-        text.style.display = "block";
-    }
-    }
+const onBtnClick = (event) => {
+  const clickedAnswer = event.target.innerHTML;
+  console.log(clickedAnswer);
+  if (clickedAnswer === questions[currentQuestion].correctAnswer) {
+    result.innerHTML = "Correct!";
+    score++;
+    scoreEl.innerHTML = "Score: " + score;
+  } else {
+    result.innerHTML = "Incorrect!";
+    score.innerHTML = "Score: " + score;
+    time = time - 10; 
+  }
+  currentQuestion++
+  quesh()
+};
 
+function quesh() { 
+  if (text.style.display === "block") {
+    text.innerHTML = questions[currentQuestion].question + " ";
+  }
+  if (choices.style.display === "none") {
+    choices.style.display = "block";
+  }
+  if (choices.style.display === "block") {
+    buttonA.innerHTML = questions[currentQuestion].choices[0];
+    buttonA.addEventListener("click", onBtnClick);
+    buttonB.innerHTML = questions[currentQuestion].choices[1];
+    buttonB.addEventListener("click", onBtnClick);
+    buttonC.innerHTML = questions[currentQuestion].choices[2];
+    buttonC.addEventListener("click", onBtnClick);
+    buttonD.innerHTML = questions[currentQuestion].choices[3];
+    buttonD.addEventListener("click", onBtnClick);
+  } else {
+    text.style.display = "block";
+  }
+}
 
 
 

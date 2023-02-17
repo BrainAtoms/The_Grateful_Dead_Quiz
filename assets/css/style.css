@@ -3,6 +3,9 @@ body {
     font-family: 'sans-serif';
 }
 
+h2 {
+margin-right: 55px;
+}
 
 nav p {
     display: flex;
@@ -15,9 +18,13 @@ nav p {
 button {
     display:block; 
     margin-top: 20px; 
-    margin-left: 150px;
+    margin-left: 120px;
     height: 50px;
     width: 105px;  
+}
+
+button:hover {
+    background-color:aquamarine
 }
 
 section {
@@ -34,6 +41,8 @@ section {
 article {
     font-size: 30px;
 }
+
+
 
 
 
