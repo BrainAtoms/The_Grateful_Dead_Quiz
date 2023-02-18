@@ -42,7 +42,13 @@ article {
     font-size: 30px;
 }
 
+.clear {
+    margin-left: 0;
+}
 
+#submit {
+    margin-left: 0; 
+}
 
 
 
