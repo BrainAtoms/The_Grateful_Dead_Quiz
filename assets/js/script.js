@@ -43,7 +43,7 @@ var currentIndex = 0;
 const result = document.getElementById("result");
 const scoreEl = document.getElementById("score");
 const gameOver = document.getElementById("game-over");
-const yourScore = document.getElementById("your-score");
+const stats = document.getElementById("stats")
 
 var text = document.getElementById("main-text");
 var choices = document.getElementById("choices");
@@ -108,6 +108,7 @@ const onBtnClick = (event) => {
     var optionsEl = document.getElementById('options')
     optionsEl.innerHTML = scoresHTML
     text.style.display = "none"; 
+    stats.style.display = "none"
   }
 };
 
@@ -117,6 +118,7 @@ function restartQuiz () {
   scoreEl.innerHTML = "Score: " + score; 
   time = startingMinutes * 60;
   text.style.display = "block";
+  stats.style.display = "block"
   quesh();
 }
 
