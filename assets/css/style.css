@@ -1,6 +1,11 @@
 body {
+    justify-content: center;
     background-color: palegoldenrod;
     font-family: 'sans-serif';
+}
+
+ h1 {
+    margin-right: 55px; 
 }
 
 h2 {
@@ -8,7 +13,7 @@ margin-right: 55px;
 }
 
 nav p {
-    display: flex;
+    display: block;
     align-items: center;
     font-size: 20px; 
     margin: auto; 
@@ -21,15 +26,16 @@ button {
     margin-left: 120px;
     height: 50px;
     width: 105px;  
-}
+} 
 
 button:hover {
     background-color:aquamarine
 }
 
-section {
-    display:block; 
+section #final-score{
+    display:center; 
     text-align: center;
+    font-size: larger;
     margin-left: auto;
     margin-right: auto;
     max-height: 400px;
@@ -42,13 +48,16 @@ article {
     font-size: 30px;
 }
 
-.clear {
-    margin-left: 0;
+input {
+    margin-right: 60px;
 }
 
-#submit {
-    margin-left: 0; 
-}
+
+
+
+
+
+
 
 
 

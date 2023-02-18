@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
+
     <nav>
         <p><a href=scores.html>View Scores</a>
         <p id="countdown">Timer: 2:00</p>
@@ -16,10 +17,11 @@
     <h1 class="title">Coding Quiz Challenge!</h1>
     <article id="main-text" style="display:block">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</article>
     <section id="choices" style="display:none">
-        <button class="button" id='A'></button> 
+        <div id="options"></div>
+        <!-- <button class="button" id='A'></button> 
         <button class="button" id='B'></button>
         <button class="button" id='C'></button>
-        <button class="button" id=D></button>
+        <button class="button" id=D></button> -->
         <h2 id="score">Score: 0</h2>
         <h2 id="result"></h2>
         <h2 id="game-over"></h2>
@@ -28,5 +30,6 @@
     <button id="start-button" type="button" onclick="quesh()">Start Quiz</button>
     </section>
     <script src="./assets/js/script.js"></script> 
+    
 </body>
 </html>
