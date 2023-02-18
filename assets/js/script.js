@@ -35,7 +35,7 @@ const questions = [
 ];
 
 const submittedScores = [];
-console.log(submittedScores)
+console.log(submittedScores);
 
 var score = 0;
 var currentIndex = 0;
@@ -43,8 +43,9 @@ var currentIndex = 0;
 const result = document.getElementById("result");
 const scoreEl = document.getElementById("score");
 const gameOver = document.getElementById("game-over");
-const stats = document.getElementById("stats")
+const stats = document.getElementById("stats");
 
+var title = document.getElementById("title");
 var text = document.getElementById("main-text");
 var choices = document.getElementById("choices");
 
@@ -58,22 +59,42 @@ btnStart.addEventListener("click", () => {
   setInterval(updateCountdown, 1000);
   btnStart.style.display = "none";
 });
+// buttonA = dcoument.getElementById('A')
 
-function updateCountdown() {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-
-  countdownEl.innerHTML = "Timer:" + ` ${minutes}:${seconds}`;
-
-  if (time === 0) {
-    gameOver.textContent = "GAME OVER!";
-  } else {
-    time--;
-  }
+function goToScore() {
+  const scoresHTML = `<section><h1>Final Score: ${score}/${questions.length} </h1>
+<h1 class="scorepage">Add your initials to submit your score.</h1>
+<input class="scorepage" id="initials"/>
+<button class="scorepage" id="submit" onclick="onSubmitScore()";>Submit Score</button>
+<h2 class="scorepage" class="submitted">Submitted Scores:</h2>
+<div class="scorepage" id="high-scores"></div>
+<button class="scorepage" id="clear">Clear Scores</button>
+<button class="scorepage" onclick="restartQuiz()">Return to Coding Quiz</button></section>`;
+  var optionsEl = document.getElementById("options");
+  optionsEl.innerHTML = scoresHTML;
+  text.style.display = "none";
+  stats.style.display = "none";
+  title.style.display = "none";
+  time = 0;
+  const clearBtn = document.getElementById("clear");
+  const highScore = document.getElementById("high-scores")
+  clearBtn.addEventListener('click', () => {
+  highScore.innerHTML = ""; 
+  })
+}
+function restartQuiz() {
+  currentIndex = 0;
+  score = 0;
+  scoreEl.innerHTML = "Score: " + score;
+  time = startingMinutes * 60;
+  text.style.display = "block";
+  stats.style.display = "block";
+  result.innerHTML = "You got this!";
+  gameOver.textContent = '';
+  quesh();
 }
 
-const onBtnClick = (event) => {
+const onAnswerClick = (event) => {
   const clickedAnswer = event.target.innerHTML;
   // console.log(clickedAnswer);
   if (clickedAnswer === questions[currentIndex].correctAnswer) {
@@ -95,31 +116,24 @@ const onBtnClick = (event) => {
   } else {
     quesh();
   }
-
-  function goToScore() {
-    const scoresHTML = `<section id="final-score"><h1>Final Score: ${score}/${questions.length} </h1>
-<h1>Add your initials to submit your score.</h1>
-<input id="initials"/>
-<button id="submit" onclick="onSubmitScore()";>Submit Score</button>
-<h2 class="submitted">Submitted Scores:</h2>
-<div id="high-scores"></div>
-<button id="clear">Clear Scores</button>
-<button onclick="restartQuiz()">Return to Coding Quiz</button></section>`;
-    var optionsEl = document.getElementById('options')
-    optionsEl.innerHTML = scoresHTML
-    text.style.display = "none"; 
-    stats.style.display = "none"
-  }
 };
 
-function restartQuiz () {
-  currentIndex = 0;
-  score = 0;  
-  scoreEl.innerHTML = "Score: " + score; 
-  time = startingMinutes * 60;
-  text.style.display = "block";
-  stats.style.display = "block"
-  quesh();
+function updateCountdown() {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
+  countdownEl.innerHTML = "Timer:" + ` ${minutes}:${seconds}`;
+
+  if (time === 0) {
+    gameOver.textContent = "GAME OVER! Refresh to start over.";
+    buttonA.disabled = true;
+    buttonB.disabled = true;
+    buttonC.disabled = true;
+    buttonD.disabled = true;
+  } else {
+    time--;
+  }
 }
 
 function onSubmitScore() {
@@ -127,13 +141,22 @@ function onSubmitScore() {
   const initials = initialsInput.value;
   console.log(initials);
   const newScore = { initials: initials, value: score };
-  const highScore = document.getElementById("high-scores")
+  const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value}</div>`
-  }) 
-  highScore.innerHTML = submittedScoresHTML; 
+    return `<div>${score.initials}:</div><div>${score.value}</div>`;
+  });
+  highScore.innerHTML = submittedScoresHTML;
 }
+
+var buttonA = document.createElement("button");
+buttonA.setAttribute("id", "A");
+var buttonB = document.createElement("button");
+buttonB.setAttribute("id", "B");
+var buttonC = document.createElement("button");
+buttonC.setAttribute("id", "C");
+var buttonD = document.createElement("button");
+buttonD.setAttribute("id", "D");
 
 function quesh() {
   if (text.style.display === "block") {
@@ -144,31 +167,23 @@ function quesh() {
   }
   if (choices.style.display === "block") {
     if (currentIndex === 0) {
-    const optionsEl = document.getElementById("options")
-
-    var buttonA = document.createElement('button');
-    buttonA.setAttribute('id', 'A')
-    var buttonB = document.createElement('button');
-    buttonB.setAttribute('id', 'B')
-    var buttonC = document.createElement('button');
-    buttonC.setAttribute('id', 'C')
-    var buttonD = document.createElement('button');
-    buttonD.setAttribute('id', 'D')
-    optionsEl.replaceChildren(buttonA, buttonB, buttonC, buttonD)
+      const optionsEl = document.getElementById("options");
+      optionsEl.replaceChildren(buttonA, buttonB, buttonC, buttonD);
     }
-    buttonA = document.getElementById('A')
-    buttonB = document.getElementById('B')
-    buttonC = document.getElementById('C')
-    buttonD = document.getElementById('D')
     buttonA.innerHTML = questions[currentIndex].choices[0];
-    buttonA.addEventListener("click", onBtnClick); 
+    buttonA.addEventListener("click", onAnswerClick);
     buttonB.innerHTML = questions[currentIndex].choices[1];
-    buttonB.addEventListener("click", onBtnClick);
+    buttonB.addEventListener("click", onAnswerClick);
     buttonC.innerHTML = questions[currentIndex].choices[2];
-    buttonC.addEventListener("click", onBtnClick);
+    buttonC.addEventListener("click", onAnswerClick);
     buttonD.innerHTML = questions[currentIndex].choices[3];
-    buttonD.addEventListener("click", onBtnClick);
+    buttonD.addEventListener("click", onAnswerClick);
   } else {
     question.style.display = "none";
   }
+  buttonA.disabled = false;
+  buttonB.disabled = false;
+  buttonC.disabled = false;
+  buttonD.disabled = false;
+ 
 }

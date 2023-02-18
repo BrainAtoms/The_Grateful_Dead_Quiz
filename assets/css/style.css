@@ -1,15 +1,23 @@
 body {
     justify-content: center;
     background-color: palegoldenrod;
-    font-family: 'sans-serif';
+    font-family: 'sans-serif'; 
 }
 
- h1 {
+h1 {
+    margin-right: 55px; 
+}
+
+.scorepage h1 {
     margin-right: 55px; 
 }
 
 h2 {
-margin-right: 55px;
+    margin-right: 55px; 
+}
+
+#title {
+    margin-left: 45px;
 }
 
 nav p {
@@ -19,20 +27,29 @@ nav p {
     margin: auto; 
     height: 50px;
 }
+ .scorepage  {
+    display:block; 
+    margin-left: auto; 
+    margin-right: auto; 
+} 
 
 button {
     display:block; 
     margin-top: 20px; 
-    margin-left: 120px;
+    margin-left: 135px;
     height: 50px;
     width: 105px;  
 } 
+
+.scorepage button:hover {
+    background-color:aquamarine;
+}
 
 button:hover {
     background-color:aquamarine
 }
 
-section #final-score{
+section {
     display:center; 
     text-align: center;
     font-size: x-large;
@@ -40,17 +57,34 @@ section #final-score{
     margin-right: auto;
     max-height: 400px;
     width:400px;
-    padding:20px;
-    margin-top:20px;
+    padding:10px;
 }
 
-article {
+#final-score{
+    display:block;
+    text-align: center;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+#stats {
+    margin-left: 5px;
+}
+
+.scorepage article {
     font-size: 30px;
 }
+ input {
+    height: 20px;
+    width: 50px;
+ }
 
-input {
-    margin-right: 60px;
-}
+ #clear {
+    display: inline-block;
+    margin-left: 0;
+ }
+
 
 
 
