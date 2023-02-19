@@ -89,7 +89,8 @@ margin-left: 120px;
  }
 
 #final-score {
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
