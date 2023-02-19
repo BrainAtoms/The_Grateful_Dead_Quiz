@@ -174,6 +174,10 @@ function goToScore() {
 function onSubmitScore() {
   var initialsInput = document.getElementById("initials");
   var initials = initialsInput.value;
+  if (initials === "") {
+    window.alert("You shall remain anonymous!");
+    initials = "ANON"
+  }
   const newScore = { initials: initials, value: score };
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
@@ -181,9 +185,6 @@ function onSubmitScore() {
     return `<div>${score.initials}:</div><div>${score.value} out of 5</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
-  if (initials === "") {
-    window.alert("You shall remain anonymous!");
-  }
 }
 
 // brings back initials quiz settings when quiz is retaken
@@ -199,3 +200,5 @@ function restartQuiz() {
   myInterval = setInterval(updateCountdown, 1000);
   quesh();
 }
+
+
