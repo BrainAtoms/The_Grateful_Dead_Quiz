@@ -41,7 +41,7 @@ button {
     width: 105px;  
 } 
 
-.scorepage button:hover:active {
+.scorepage button:hover {
     background-color:aquamarine;
 }
 
@@ -88,11 +88,12 @@ margin-left: 120px;
     margin-left: 45px; 
  }
 
- /* @media (max-width: 500px) {
-    button:hover {
-    background-color:;
+ @media (max-width: 500px) {
+    button:hover:active {
+    background-color:aquamarine;
+}
   }
-} */
+
 
 
 
