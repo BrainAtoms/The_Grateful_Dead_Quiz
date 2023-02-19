@@ -170,7 +170,7 @@ function goToScore() {
   });
 }
 
-// submits user initials obtained from input and respective score onto score page. 
+// submits user initials obtained from input and respective score onto score page.
 function onSubmitScore() {
   var initialsInput = document.getElementById("initials");
   var initials = initialsInput.value;
