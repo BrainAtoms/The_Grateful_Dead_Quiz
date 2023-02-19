@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-    background-color:aquamarine
+    background-color:aquamarine;
 }
 
 section {
@@ -88,12 +88,12 @@ margin-left: 120px;
     margin-left: 45px; 
  }
 
-@media (max-width:500px){ 
+@media (hover: hover){ 
     button:hover {
-       background-color: none;
+       background-color: inherit;
     }
     .scorepage button:hover {
-        background-color: none;
+        background-color: inherit;
     }
 }
 
