@@ -88,6 +88,14 @@ margin-left: 120px;
     margin-left: 45px; 
  }
 
+@media (max-width:500px){ 
+    button:hover {
+       background-color: none;
+    }
+}
+
+
+
 
 
 
