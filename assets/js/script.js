@@ -48,6 +48,7 @@ const scoreEl = document.getElementById("score");
 const gameOver = document.getElementById("game-over");
 const submittedScores = [];
 const stats = document.getElementById("stats");
+const refresh = document.getElementById("refresh")
 
 var title = document.getElementById("title");
 var text = document.getElementById("main-text");
@@ -148,7 +149,8 @@ function goToScore() {
 <button id="submit" class="scorepage" onclick="onSubmitScore()";>Submit Score</button>
 <div class="scorepage" id="high-scores"></div>
 <button class="scorepage" id="hide">Hide Scores</button>
-<button class="scorepage" onclick="restartQuiz()">Return to Coding Quiz</button></section>`;
+<button class="scorepage" onclick="restartQuiz()">Return to Coding Quiz</button>
+<h2 id="refresh">Refresh to go back to inital page.</h2></section>`;
   var optionsEl = document.getElementById("options");
   optionsEl.innerHTML = scoresHTML;
   text.style.display = "none";
