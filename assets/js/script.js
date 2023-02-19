@@ -48,7 +48,7 @@ const scoreEl = document.getElementById("score");
 const gameOver = document.getElementById("game-over");
 const submittedScores = [];
 const stats = document.getElementById("stats");
-const refresh = document.getElementById("refresh")
+const refresh = document.getElementById("refresh");
 
 var title = document.getElementById("title");
 var text = document.getElementById("main-text");
@@ -63,7 +63,7 @@ const countdownEl = document.getElementById("countdown");
 
 // begins timer when start button is pressed
 btnStart.addEventListener("click", () => {
-  myInterval = setInterval(updateCountdown, 1000)
+  myInterval = setInterval(updateCountdown, 1000);
   btnStart.style.display = "none";
 });
 
@@ -119,7 +119,6 @@ function quesh() {
 // displays message and score whenever answer button is clicked and brings user to score page when last answer is clicked
 const onAnswerClick = (event) => {
   const clickedAnswer = event.target.innerHTML;
-  // console.log(clickedAnswer);
   if (clickedAnswer === questions[currentIndex].correctAnswer) {
     result.innerHTML = "Correct!";
     score++;
@@ -150,25 +149,31 @@ function goToScore() {
 <div class="scorepage" id="high-scores"></div>
 <button class="scorepage" id="hide">Hide Scores</button>
 <button class="scorepage" onclick="restartQuiz()">Return to Coding Quiz</button>
-<h2 id="refresh">Refresh to go back to inital page.</h2></section>`;
+<h2 id="refresh">Refresh to go back to Main Page.</h2></section>`;
   var optionsEl = document.getElementById("options");
   optionsEl.innerHTML = scoresHTML;
   text.style.display = "none";
   stats.style.display = "none";
   title.style.display = "none";
   clearInterval(myInterval);
+  const initialsInput = document.getElementById("initials");
   const hideBtn = document.getElementById("hide");
-  const highScore = document.getElementById("high-scores")
-  hideBtn.addEventListener('click', () => {
-  highScore.innerHTML = "";
-  })
+  const submitBtn = document.getElementById("submit");
+  const highScore = document.getElementById("high-scores");
+  submitBtn.addEventListener("click", () => {
+    submitBtn.style.display = "none";
+    initialsInput.style.display = "none";
+  });
+  hideBtn.addEventListener("click", () => {
+    highScore.innerHTML = "";
+    hideBtn.style.display = "none";
+  });
 }
 
-// submits user initials obtained from input and respective score onto score page
+// submits user initials obtained from input and respective score onto score page. 
 function onSubmitScore() {
-  const initialsInput = document.getElementById("initials");
-  const initials = initialsInput.value;
-  console.log(initials);
+  var initialsInput = document.getElementById("initials");
+  var initials = initialsInput.value;
   const newScore = { initials: initials, value: score };
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
@@ -176,11 +181,12 @@ function onSubmitScore() {
     return `<div>${score.initials}:</div><div>${score.value} out of 5</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
-  const submitBtn = document.getElementById("submit")
-  submitBtn.disabled = true; 
+  if (initials === "") {
+    window.alert("You shall remain anonymous!");
+  }
 }
 
-// brings back initials quiz settings when quiz is retaken 
+// brings back initials quiz settings when quiz is retaken
 function restartQuiz() {
   currentIndex = 0;
   score = 0;
@@ -189,7 +195,7 @@ function restartQuiz() {
   text.style.display = "block";
   stats.style.display = "block";
   result.innerHTML = "You got this!";
-  gameOver.textContent = '';
-  myInterval = setInterval(updateCountdown, 1000)
+  gameOver.textContent = "";
+  myInterval = setInterval(updateCountdown, 1000);
   quesh();
 }
