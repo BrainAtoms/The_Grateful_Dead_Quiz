@@ -41,11 +41,11 @@ button {
     width: 105px;  
 } 
 
-.scorepage button:hover {
+.scorepage button:hover:active {
     background-color:aquamarine;
 }
 
-button:hover {
+button:hover:active {
     background-color:aquamarine;
 }
 
@@ -88,15 +88,11 @@ margin-left: 120px;
     margin-left: 45px; 
  }
 
-@media (hover: hover){ 
+ /* @media (max-width: 500px) {
     button:hover {
-       background-color: inherit;
-    }
-    .scorepage button:hover {
-        background-color: inherit;
-    }
-}
-
+    background-color:;
+  }
+} */
 
 
 
