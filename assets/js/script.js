@@ -60,11 +60,13 @@ let time = startingMinutes * 60;
 const btnStart = document.getElementById("start-button");
 const countdownEl = document.getElementById("countdown");
 
+// begins timer when start button is pressed
 btnStart.addEventListener("click", () => {
   myInterval = setInterval(updateCountdown, 1000)
   btnStart.style.display = "none";
 });
 
+// updates timer every interval and disables buttons when time = 0
 function updateCountdown() {
   const minutes = Math.floor(time / 60);
   let seconds = time % 60;
@@ -83,6 +85,7 @@ function updateCountdown() {
   }
 }
 
+// sorts through each question and answer options each time button is clicked
 function quesh() {
   if (text.style.display === "block") {
     text.innerHTML = questions[currentIndex].question + " ";
@@ -112,6 +115,7 @@ function quesh() {
   buttonD.disabled = false;
 }
 
+// displays message and score whenever answer button is clicked and brings user to score page when last answer is clicked
 const onAnswerClick = (event) => {
   const clickedAnswer = event.target.innerHTML;
   // console.log(clickedAnswer);
@@ -136,6 +140,7 @@ const onAnswerClick = (event) => {
   }
 };
 
+// creates score page so that scores don't get lost when quiz is taken multiple times. Also stops timer when quiz ends and creates hide score button to hide scores.
 function goToScore() {
   const scoresHTML = `<section><h1>Final Score: ${score}/${questions.length} </h1>
 <h1 class="scorepage">Add your initials to submit your score.</h1>
@@ -150,13 +155,14 @@ function goToScore() {
   stats.style.display = "none";
   title.style.display = "none";
   clearInterval(myInterval);
-  const clearBtn = document.getElementById("hide");
+  const hideBtn = document.getElementById("hide");
   const highScore = document.getElementById("high-scores")
-  clearBtn.addEventListener('click', () => {
+  hideBtn.addEventListener('click', () => {
   highScore.innerHTML = "";
   })
 }
 
+// submits user initials obtained from input and respective score onto score page
 function onSubmitScore() {
   const initialsInput = document.getElementById("initials");
   const initials = initialsInput.value;
@@ -172,6 +178,7 @@ function onSubmitScore() {
   submitBtn.disabled = true; 
 }
 
+// brings back initials quiz settings when quiz is retaken 
 function restartQuiz() {
   currentIndex = 0;
   score = 0;
@@ -183,33 +190,4 @@ function restartQuiz() {
   gameOver.textContent = '';
   myInterval = setInterval(updateCountdown, 1000)
   quesh();
-}
-
-function quesh() {
-  if (text.style.display === "block") {
-    text.innerHTML = questions[currentIndex].question + " ";
-  }
-  if (choices.style.display === "none") {
-    choices.style.display = "block";
-  }
-  if (choices.style.display === "block") {
-    if (currentIndex === 0) {
-      const optionsEl = document.getElementById("options");
-      optionsEl.replaceChildren(buttonA, buttonB, buttonC, buttonD);
-    }
-    buttonA.innerHTML = questions[currentIndex].choices[0];
-    buttonA.addEventListener("click", onAnswerClick);
-    buttonB.innerHTML = questions[currentIndex].choices[1];
-    buttonB.addEventListener("click", onAnswerClick);
-    buttonC.innerHTML = questions[currentIndex].choices[2];
-    buttonC.addEventListener("click", onAnswerClick);
-    buttonD.innerHTML = questions[currentIndex].choices[3];
-    buttonD.addEventListener("click", onAnswerClick);
-  } else {
-    question.style.display = "none";
-  }
-  buttonA.disabled = false;
-  buttonB.disabled = false;
-  buttonC.disabled = false;
-  buttonD.disabled = false;
 }
