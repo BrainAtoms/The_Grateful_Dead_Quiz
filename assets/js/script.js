@@ -63,7 +63,7 @@ const countdownEl = document.getElementById("countdown");
 
 // begins timer when start button is pressed
 btnStart.addEventListener("click", () => {
-  myInterval = setInterval(updateCountdown, 10);
+  myInterval = setInterval(updateCountdown, 1000);
   btnStart.style.display = "none";
 });
 
