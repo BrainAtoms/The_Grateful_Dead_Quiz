@@ -63,7 +63,7 @@ const countdownEl = document.getElementById("countdown");
 
 // begins timer when start button is pressed
 btnStart.addEventListener("click", () => {
-  myInterval = setInterval(updateCountdown, 1000);
+  myInterval = setInterval(updateCountdown, 10);
   btnStart.style.display = "none";
 });
 
@@ -77,10 +77,7 @@ function updateCountdown() {
 
   if (time === 0) {
     gameOver.textContent = "GAME OVER! Refresh to start over.";
-    buttonA.disabled = true;
-    buttonB.disabled = true;
-    buttonC.disabled = true;
-    buttonD.disabled = true;
+    goToScore();
   } else {
     time--;
   }
@@ -135,7 +132,8 @@ const onAnswerClick = (event) => {
   currentIndex++;
   if (!questions[currentIndex]) {
     goToScore();
-  } else {
+  } 
+  else {
     quesh();
   }
 };
