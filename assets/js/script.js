@@ -1,36 +1,36 @@
 const questions = [
   {
-    question: "Commonly used data types do NOT include?",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    correctAnswer: "alerts",
+    question: "The Grateful Dead formed where?:",
+    choices: ["Los Angeles", "Santa Cruz", "Palo Alto", "Sacramento"],
+    correctAnswer: "Palo Alto",
   },
   {
     question:
-      "The condition in an if/else statement is enclosed with __________",
-    choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
-    correctAnswer: "parenthesis",
+      "Jerry Garcia's actual first name is what?",
+    choices: ["Jerome", "Jerald", "Jeremiah", "Jeron"],
+    correctAnswer: "Jerome",
   },
   {
-    question: "Arrays in Javascript can be used to store __________",
+    question: "How did Jerry lose the top two joints of his middle finger on his right hand?",
     choices: [
-      "numbers and strings",
-      "other arrays",
-      "booleans",
-      "all of the above",
+      "It happened in a caravan fire.",
+      "It happened from a slammed door.",
+      `It happened while his brother "Tiff" was chopping wood in the Redwoods.`,
+      "It happened from a table saw accident.",
     ],
-    correctAnswer: "all of the above",
+    correctAnswer: `It happened while his brother "Tiff" was chopping wood in the Redwoods.`,
   },
   {
     question:
-      "String values must be enclosed within ______ when being assigned to variables.",
-    choices: ["commas", "curly brackets", "quotes", "parenthesis"],
-    correctAnswer: "quotes",
+      "When did Bob Weir meet Jerry Garcia?",
+    choices: ["December 31st, 1963", "January 1st, 1964", "October 31st, 1962", "July 4th, 1961"],
+    correctAnswer: "December 31st, 1963",
   },
   {
     question:
-      "A very useful tool used during development and debugging for printing content to the debugger is:",
-    choices: ["Javascript", "termina/bash", "for loops", "console.log"],
-    correctAnswer: "console.log",
+      "What was the previous name for The Grateful Dead?",
+    choices: ["The Sparrows", "Mother Goose's Downtown Jug Band", "Kingfish", "The Warlocks"],
+    correctAnswer: "The Warlocks",
   },
 ];
 
@@ -132,8 +132,7 @@ const onAnswerClick = (event) => {
   currentIndex++;
   if (!questions[currentIndex]) {
     goToScore();
-  } 
-  else {
+  } else {
     quesh();
   }
 };
@@ -174,7 +173,7 @@ function onSubmitScore() {
   var initials = initialsInput.value;
   if (initials === "") {
     window.alert("You shall remain anonymous!");
-    initials = "ANON"
+    initials = "ANON";
   }
   const newScore = { initials: initials, value: score };
   const highScore = document.getElementById("high-scores");
