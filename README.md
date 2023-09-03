@@ -5,7 +5,7 @@ The Grateful Dead Quiz was created as a resource for people interested in The Gr
 # ![Screen Shot 2023-09-02 at 9 07 52 PM](https://github.com/BrainAtoms/Coding_Quiz/assets/61917285/24cba32e-828d-4408-b87d-0561d12495d2)
 
 #
-[Coding Quiz](https://brainatoms.github.io/Coding_Quiz/)
+[The Grateful Dead Quiz](https://brainatoms.github.io/The_Grateful_Dead_Quiz/)
 
 ## Installation
 
