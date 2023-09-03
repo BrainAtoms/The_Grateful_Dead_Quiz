@@ -15,10 +15,10 @@ const questions = [
     choices: [
       "It happened in a caravan fire.",
       "It happened from a slammed door.",
-      `It happened while his brother "Tiff" was chopping wood in the Redwoods.`,
+      "It happened while his brother was chopping wood.",
       "It happened from a table saw accident.",
     ],
-    correctAnswer: `It happened while his brother "Tiff" was chopping wood in the Redwoods.`,
+    correctAnswer: "It happened while his brother was chopping wood.",
   },
   {
     question:
@@ -145,7 +145,7 @@ function goToScore() {
 <button id="submit" class="scorepage" onclick="onSubmitScore()";>Submit Score</button>
 <div class="scorepage" id="high-scores"></div>
 <button class="scorepage" id="hide">Hide Scores</button>
-<button id="return" class="scorepage" onclick="restartQuiz()">Return to Coding Quiz</button>
+<button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
 <h2 id="refresh">Refresh to go back to Main Page.</h2></section>`;
   var optionsEl = document.getElementById("options");
   optionsEl.innerHTML = scoresHTML;
