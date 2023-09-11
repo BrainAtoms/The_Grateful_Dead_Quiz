@@ -32,6 +32,36 @@ const questions = [
     choices: ["The Sparrows", "Mother Goose's Downtown Jug Band", "Kingfish", "The Warlocks"],
     correctAnswer: "The Warlocks",
   },
+  {
+    question:
+      "Who was Bob Weir's primary songwriting partner for The Grateful Dead?",
+    choices: ["Robert Hunter", "Jerry Garcia", "John Perry Barlow", "Jack Straw"],
+    correctAnswer: "John Perry Barlow",
+  },
+  {
+    question:
+      "What year did Keith and Donna Godchaux join The Grateful Dead?",
+    choices: ["1971", "1972", "1970", "1973"],
+    correctAnswer: "1971",
+  },
+  {
+    question:
+      "Who was The Grateful Dead's original frontman?",
+    choices: ["Robert Hunter", "Bob Weir", "Jerry Garcia", "Ron 'Pigpen' McKernan"],
+    correctAnswer: "Ron 'Pigpen' McKernan",
+  },
+  {
+    question:
+      "Who hosted The Acid Tests where The Grateful Dead would frequently perform during the 60's?",
+    choices: ["Neal Cassady", "Ken Kesey", "Tom Wolfe", "Timothy Leary"],
+    correctAnswer: "Ken Kesey",
+  },
+  {
+    question:
+      "Police raided The Grateful Dead's residency at 710 Ashbury St. on marijuana charges when??",
+    choices: ["Oct. 2nd, 1967", "Oct. 6th, 1968", "Oct. 3rd, 1966", "Oct. 11th, 1969"],
+    correctAnswer: "Oct. 2nd, 1967",
+  },
 ];
 
 var buttonA = document.createElement("button");
