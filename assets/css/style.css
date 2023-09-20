@@ -94,6 +94,24 @@ margin-left: 120px;
 }
   }
 
+  @media (max-width: 500px) {
+    section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 15px;
+      
+    }
+  }
+
+  @media (max-width: 500px) {
+    button {
+    font-size: 12px;
+    height: 80px;
+}
+  }
+  
+
 #bolt {
     margin-left: 30px;
 }
