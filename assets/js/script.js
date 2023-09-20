@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "The Grateful Dead formed where?:",
+    question: "The Grateful Dead formed where?",
     choices: ["Los Angeles", "Santa Cruz", "Palo Alto", "Sacramento"],
     correctAnswer: "Palo Alto",
   },
@@ -58,9 +58,39 @@ const questions = [
   },
   {
     question:
-      "Police raided The Grateful Dead's residency at 710 Ashbury St. on marijuana charges when??",
+      "Police raided The Grateful Dead's residency at 710 Ashbury St. on marijuana charges when?",
     choices: ["Oct. 2nd, 1967", "Oct. 6th, 1968", "Oct. 3rd, 1966", "Oct. 11th, 1969"],
     correctAnswer: "Oct. 2nd, 1967",
+  },
+  {
+    question:
+      "Bill Kreutzmann and Mickey Hart together have been nicknamed _________________?",
+    choices: ["Planet Drum", "The Other Ones", "Wolf Bros", "The Rhythm Devils"],
+    correctAnswer: "The Rhythm Devils",
+  },
+  {
+    question:
+      "New Potato Caboose was composed by Phil Lesh and ______________?",
+    choices: ["Bob Weir", "Tom Constanten", "Bobby Peterson", "Robert Hunter"],
+    correctAnswer: "Bobby Peterson",
+  },
+   {
+    question:
+      "Which guitar did Jerry Garcia play during Cornell 5/8/77?",
+    choices: ["Alligator", "Travis Bean", "Wolf", "Tiger"],
+    correctAnswer: "Travis Bean",
+  },
+  {
+    question:
+      "Which audio engineer is responsible for the recording of Cornell 5/8/77?",
+    choices: ["Betty Cantor-Jackson", "Dan Healy", "Owsley Stanley", "Bob Heil"],
+    correctAnswer: "Betty Cantor-Jackson",
+  },
+   {
+    question:
+      "Where did The Grateful Dead perform during September 15th and 16th of 1978?",
+    choices: ["Pompeii", "Stonehenge", "Easter Island", "Giza Necropolis"],
+    correctAnswer: "Giza Necropolis",
   },
 ];
 
