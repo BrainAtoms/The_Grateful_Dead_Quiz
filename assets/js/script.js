@@ -199,7 +199,7 @@ const onAnswerClick = (event) => {
 
 // creates score page so that scores don't get lost when quiz is taken multiple times. Also stops timer when quiz ends and creates hide score button to hide scores.
 function goToScore() {
-  const scoresHTML = `<section class="score"><h1 id="final-score">Final Score: ${score}/${questions.length} </h1>
+  const scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} </h1>
 <h1 id="init" class="scorepage">Add your initials to submit your score.</h1>
 <input class="scorepage" id="initials"/>
 <button id="submit" class="scorepage" onclick="onSubmitScore()";>Submit Score</button>
@@ -239,7 +239,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 5</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 15</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }

@@ -1,37 +1,10 @@
 body {
+    display: flex;
     justify-content: center;
+    text-align: center;
     background-color: palegoldenrod;
     font-family: 'sans-serif'; 
 }
-
-h1 {
-    margin-right: 55px; 
-}
-
-.scorepage h1 {
-    margin-right: 55px; 
-}
-
-h2 {
-    margin-right: 55px; 
-}
-
-#title {
-    margin-left: 45px;
-}
-
-nav p {
-    display: block;
-    align-items: center;
-    font-size: 20px; 
-    margin: auto; 
-    height: 50px;
-}
- .scorepage  {
-    display:block; 
-    margin-left: auto; 
-    margin-right: auto; 
-} 
 
 button {
     display:block; 
@@ -49,7 +22,7 @@ button:hover {
     background-color:aquamarine;
 }
 
-section {
+.container {
     display:center; 
     text-align: center;
     font-size: x-large;
@@ -60,32 +33,28 @@ section {
     padding:10px;
 }
 
-#final-score{
-    display:block;
+#final-score {
+    margin-right: 20px;
+}
+
+#high-scores {
+    display:center; 
     text-align: center;
     font-size: x-large;
-    margin-left: auto;
-    margin-right: auto;
-} 
-
-#stats {
-    margin-left: 5px;
+    margin-left: -20px;
+    max-height: 400px;
+    width:400px;
+    padding:10px;
 }
 
-.scorepage article {
-    font-size: 30px;
+#score {
+    margin-right: 20px;
 }
+
  input {
     height: 20px;
     width: 50px;
- }
-
-#clear2 {
-margin-left: 120px;
- }
-
- #refresh {
-    margin-left: 45px; 
+    margin-right: 20px;
  }
 
  @media (max-width: 500px) {
@@ -96,11 +65,10 @@ margin-left: 120px;
 
   @media (max-width: 500px) {
     section {
-      display: flex;
+      display: center;
       flex-direction: column;
       text-align: center;
-      font-size: 15px;
-      
+      font-size: 12px;
     }
   }
 
@@ -111,10 +79,12 @@ margin-left: 120px;
 }
   }
   
-
-#bolt {
-    margin-left: 30px;
+  @media (max-width: 500px) {
+    #score {
+    margin-right: 5px;
 }
+  }
+
 
 
 
