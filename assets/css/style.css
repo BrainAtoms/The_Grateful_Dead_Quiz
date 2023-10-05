@@ -57,7 +57,7 @@ button:hover {
     margin-right: 20px;
  }
 
- @media (max-width: 500px) {
+ /* @media (max-width: 500px) {
     button:hover {
     background-color:#EFEFEF;
 }
@@ -83,7 +83,7 @@ button:hover {
     #score {
     margin-right: 5px;
 }
-  }
+  } */
 
 
 
