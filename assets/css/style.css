@@ -7,9 +7,13 @@ body {
 }
 
 button {
-    display:block; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px; 
-    margin-left: 135px;
     height: 100px;
     width: 105px;  
 } 
@@ -47,14 +51,14 @@ button:hover {
     padding:10px;
 }
 
-#score {
+/* #score {
     margin-right: 20px;
-}
+} */
 
  input {
     height: 20px;
     width: 50px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
  }
 
  /* @media (max-width: 500px) {
