@@ -200,11 +200,6 @@ const onAnswerClick = (event) => {
 // creates score page so that scores don't get lost when quiz is taken multiple times. Also stops timer when quiz ends and creates hide score button to hide scores.
 function goToScore() {
   const scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} </h1>
-<h1 id="init" class="scorepage">Add your initials to submit your score.</h1>
-<input class="scorepage" id="initials"/>
-<button id="submit" class="scorepage" onclick="onSubmitScore()";>Submit Score</button>
-<div class="scorepage" id="high-scores"></div>
-<button class="scorepage" id="hide">Hide Scores</button>
 <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
 <h2 id="refresh">Refresh to go back to Main Page.</h2></section>`;
   var optionsEl = document.getElementById("options");
@@ -257,3 +252,9 @@ function restartQuiz() {
   myInterval = setInterval(updateCountdown, 1000);
   quesh();
 }
+
+{/* <h1 id="init" class="scorepage">Add your initials to submit your score.</h1>
+<input class="scorepage" id="initials"/>
+<button id="submit" class="scorepage" onclick="onSubmitScore()";>Submit Score</button>
+<div class="scorepage" id="high-scores"></div>
+<button class="scorepage" id="hide">Hide Scores</button> */}
