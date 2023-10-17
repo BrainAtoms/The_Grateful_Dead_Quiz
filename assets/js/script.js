@@ -92,6 +92,12 @@ const questions = [
     choices: ["Pompeii", "Stonehenge", "Easter Island", "Giza Necropolis"],
     correctAnswer: "Giza Necropolis",
   },
+  {
+    question:
+      "On what date occured The Summer Jam at Watkins Glen in which The Grateful Dead performed along with The Allman Brothers Band and The Band?",
+    choices: ["July 4th, 1972", "July 12th, 1971", "July 20th, 1974", "July 28th, 1973"],
+    correctAnswer: "July 28th, 1973",
+  },
 ];
 
 var buttonA = document.createElement("button");
@@ -234,7 +240,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 15</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 16</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
