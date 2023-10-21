@@ -98,6 +98,12 @@ const questions = [
     choices: ["July 4th, 1972", "July 12th, 1971", "July 20th, 1974", "July 28th, 1973"],
     correctAnswer: "July 28th, 1973",
   },
+    {
+    question:
+      "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
+    choices: ["It Must Have Been The Roses", "To Lay Me Down", "The Wheel", "Stella Blue"],
+    correctAnswer: "To Lay Me Down",
+  }
 ];
 
 var buttonA = document.createElement("button");
@@ -240,7 +246,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 16</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 17</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
