@@ -103,6 +103,18 @@ const questions = [
       "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
     choices: ["It Must Have Been The Roses", "To Lay Me Down", "The Wheel", "Stella Blue"],
     correctAnswer: "To Lay Me Down",
+  },
+  {
+    question:
+      "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
+    choices: ["It Must Have Been The Roses", "To Lay Me Down", "The Wheel", "Stella Blue"],
+    correctAnswer: "To Lay Me Down",
+  },
+  {
+    question:
+      "The parking lots for Grateful Dead concerts eventually became vending areas for fans and named ____________?",
+    choices: ["Shakedown Street", "The Golden Road", "Promised Land", "Terrapin Station"],
+    correctAnswer: "Shakedown Street",
   }
 ];
 
@@ -246,7 +258,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 17</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 18</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
