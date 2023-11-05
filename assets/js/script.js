@@ -106,15 +106,21 @@ const questions = [
   },
   {
     question:
-      "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
-    choices: ["It Must Have Been The Roses", "To Lay Me Down", "The Wheel", "Stella Blue"],
-    correctAnswer: "To Lay Me Down",
-  },
-  {
-    question:
       "The parking lots for Grateful Dead concerts eventually became vending areas for fans and named ____________?",
     choices: ["Shakedown Street", "The Golden Road", "Promised Land", "Terrapin Station"],
     correctAnswer: "Shakedown Street",
+  },
+  {
+    question:
+      "Who helped manage The Grateful Dead's infamous Europe 72 tour?",
+    choices: ["Ron Rakow", "Leon Gast", "Sam Cutler", "Bill Graham"],
+    correctAnswer: "Sam Cutler",
+  },
+  {
+    question:
+      "On what date did The Grateful Dead debut Eyes of the World on the live stage?",
+    choices: ["2/9/1973", "12/25/1972", "3/17/1973", "11/23/1972"],
+    correctAnswer: "2/9/1973",
   }
 ];
 
@@ -258,7 +264,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 18</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 20</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
