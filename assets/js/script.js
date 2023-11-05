@@ -146,7 +146,7 @@ var choices = document.getElementById("choices");
 var score = 0;
 var currentIndex = 0;
 
-const startingMinutes = 3;
+const startingMinutes = 5;
 let time = startingMinutes * 60;
 const btnStart = document.getElementById("start-button");
 const countdownEl = document.getElementById("countdown");
