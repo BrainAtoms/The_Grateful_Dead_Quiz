@@ -121,6 +121,12 @@ const questions = [
       "On what date did The Grateful Dead debut Eyes of the World on the live stage?",
     choices: ["2/9/1973", "12/25/1972", "3/17/1973", "11/23/1972"],
     correctAnswer: "2/9/1973",
+  },
+  {
+    question:
+      "Who was the last performing keyboard player for The Grateful Dead?",
+    choices: ["Brent Mydland", "Bruce Hornsby", "Jeff Chimenti", "Vince Welnick"],
+    correctAnswer: "Vince Welnick",
   }
 ];
 
@@ -264,7 +270,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 20</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 21</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
