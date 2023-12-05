@@ -127,7 +127,14 @@ const questions = [
       "Who was the last performing keyboard player for The Grateful Dead?",
     choices: ["Brent Mydland", "Bruce Hornsby", "Jeff Chimenti", "Vince Welnick"],
     correctAnswer: "Vince Welnick",
+  },
+  {
+    question:
+      "Which song was never recorded on Grateful Dead studio album?",
+    choices: ["Eyes Of The World", "", "U.S. Blues", "Bertha", "China Cat Sunflower"],
+    correctAnswer: "Bertha",
   }
+
 ];
 
 var buttonA = document.createElement("button");
@@ -270,7 +277,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 21</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 22</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
