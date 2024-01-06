@@ -142,7 +142,7 @@ const questions = [
   },
   {
     question:
-      "What television program did The Grateful Dead play on 1/18/1969?",
+      "What television program did The Grateful Dead appear on 1/18/1969?",
     choices: ["The Beat Club", "Playboy After Dark", "The Hippie Temptation", "Saturday Night Live"],
     correctAnswer: "Playboy After Dark",
   },
@@ -288,7 +288,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 23</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 24</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
