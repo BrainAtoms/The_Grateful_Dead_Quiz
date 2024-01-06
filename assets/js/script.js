@@ -130,11 +130,22 @@ const questions = [
   },
   {
     question:
-      "Which song was never recorded on Grateful Dead studio album?",
-    choices: ["Eyes Of The World", "", "U.S. Blues", "Bertha", "China Cat Sunflower"],
+      "Which song was never recorded for a Grateful Dead studio album?",
+    choices: ["Here Comes Sunshine", "U.S. Blues", "Bertha", "China Cat Sunflower"],
     correctAnswer: "Bertha",
-  }
-
+  },
+  {
+    question:
+      "The section of the crowd at a Grateful Dead concert who were drug and alchohol-free were known as?",
+    choices: ["Sugar Magnolias", "Uncle John's Band", "Scarlet Begonias", "Wharf Rats"],
+    correctAnswer: "Wharf Rats",
+  },
+  {
+    question:
+      "What television program did The Grateful Dead play on 1/18/1969?",
+    choices: ["The Beat Club", "Playboy After Dark", "The Hippie Temptation", "Saturday Night Live"],
+    correctAnswer: "Playboy After Dark",
+  },
 ];
 
 var buttonA = document.createElement("button");
@@ -277,7 +288,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 22</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 23</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
