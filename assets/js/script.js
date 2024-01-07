@@ -146,6 +146,12 @@ const questions = [
     choices: ["The Beat Club", "Playboy After Dark", "The Hippie Temptation", "Saturday Night Live"],
     correctAnswer: "Playboy After Dark",
   },
+  {
+    question:
+      "Which album was not released under Grateful Dead Records after they fulfilled their contract with Warner Bros.?",
+    choices: ["Blues For Allah", "Terrapin Station", "From The Mars Hotel", "Wake Of The Flood"],
+    correctAnswer: "Terrapin Station",
+  },
 ];
 
 var buttonA = document.createElement("button");
@@ -253,9 +259,28 @@ const onAnswerClick = (event) => {
 
 // creates score page so that scores don't get lost when quiz is taken multiple times. Also stops timer when quiz ends and creates hide score button to hide scores.
 function goToScore() {
-  const scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} </h1>
+  console.log('goToScore')
+  let scoresHTML
+  if (score >= 20) {
+    scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> Well dang! You are definitely on the bus! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
 <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
 <h2 id="refresh">Refresh to go back to Main Page.</h2></section>`;
+  }
+  else if (score>=10 && score<20) {
+    scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> You are stepping on the bus. Welcome! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
+<button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
+<h2 id="refresh">Refresh to go back to Main Page.</h2></section>`;
+  }
+  else if (score < 10) {
+    {
+      scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> No worries! The bus is still waitin' for ya! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
+  <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
+  <h2 id="refresh">Refresh to go back to Main Page.</h2></section>`;
+    }
+  }
+
+  console.log(scoresHTML)
+  
   var optionsEl = document.getElementById("options");
   optionsEl.innerHTML = scoresHTML;
   text.style.display = "none";
@@ -288,7 +313,7 @@ function onSubmitScore() {
   const highScore = document.getElementById("high-scores");
   submittedScores.push(newScore);
   var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 24</div>`;
+    return `<div>${score.initials}:</div><div>${score.value} out of 25</div>`;
   });
   highScore.innerHTML = submittedScoresHTML;
 }
