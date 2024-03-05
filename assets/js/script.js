@@ -239,7 +239,7 @@ const questions = [
       "Garcia Foundation",
       "Rex Foundation",
       "Hart Foundation",
-      "Parish Foundation"
+      "Parish Foundation",
     ],
     correctAnswer: "Rex Foundation",
   },
@@ -372,6 +372,7 @@ function goToScore() {
   if (score >= 25) {
     scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> Well dang! You are definitely on the bus! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
 <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
+<a style="text-decoration:none" href="/answerkey.html"><button id="answers">View Answer Key</button></a>
 <h2 id="refresh">Refresh to go back to Main Page.</h2>
 <h3>Sources:</h3>
   <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
@@ -380,6 +381,7 @@ function goToScore() {
   } else if (score >= 15 && score < 20) {
     scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> You have stepped on the bus. Welcome! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
 <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
+<a style="text-decoration:none" href="/answerkey.html"><button id="answers">View Answer Key</button></a>
 <h2 id="refresh">Refresh to go back to Main Page.</h2>
 <h3>Sources:</h3>
   <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
@@ -389,6 +391,7 @@ function goToScore() {
     {
       scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> The bus is still waitin' for ya! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
   <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
+  <a style="text-decoration:none" href="/answerkey.html"><button id="answers">View Answer Key</button></a>
   <h2 id="refresh">Refresh to go back to Main Page.</h2>
   <h3>Sources:</h3>
   <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
@@ -420,40 +423,53 @@ function goToScore() {
 }
 
 // submits user initials obtained from input and respective score onto score page.
-function onSubmitScore() {
-  var initialsInput = document.getElementById("initials");
-  var initials = initialsInput.value;
-  if (initials === "") {
-    window.alert("You shall remain anonymous!");
-    initials = "ANON";
+// function onSubmitScore() {
+//   var initialsInput = document.getElementById("initials");
+//   var initials = initialsInput.value;
+//   if (initials === "") {
+//     window.alert("You shall remain anonymous!");
+//     initials = "ANON";
+//   }
+//   const newScore = { initials: initials, value: score };
+//   const highScore = document.getElementById("high-scores");
+//   submittedScores.push(newScore);
+//   var submittedScoresHTML = submittedScores.map(function (score) {
+//     return `<div>${score.initials}:</div><div>${score.value} out of 30</div>`;
+//   });
+//   highScore.innerHTML = submittedScoresHTML;
+// }
+function hideButton(){
+
+  document.getElementById('showAnswers').style.visibility= 'hidden';
+  
   }
-  const newScore = { initials: initials, value: score };
-  const highScore = document.getElementById("high-scores");
-  submittedScores.push(newScore);
-  var submittedScoresHTML = submittedScores.map(function (score) {
-    return `<div>${score.initials}:</div><div>${score.value} out of 30</div>`;
-  });
-  highScore.innerHTML = submittedScoresHTML;
+
+function answerKey() {
+  const answers = questions.map(question => {
+    return `<div>
+    <p><h3>Question:</h3>${question.question}</p>
+    <p><h3>Choices:</h3>${question.choices.join(' / ')}</p>
+    <p><h3>Correct Answer:</h3>${question.correctAnswer}</p>
+    </div>`
+  })
+  const answerKey = document.getElementById("answers")
+  answerKey.innerHTML = answers
+
+  const button = document.getElementById("showAnswers");
+  button.style.display = "none"
 }
 
-// brings back initials quiz settings when quiz is retaken
-function restartQuiz() {
-  currentIndex = 0;
-  score = 0;
-  scoreEl.innerHTML = "Score: " + score;
-  time = startingMinutes * 60;
-  text.style.display = "block";
-  stats.style.display = "block";
-  result.innerHTML = "You got this!";
-  gameOver.textContent = "";
-  myInterval = setInterval(updateCountdown, 1000);
-  quesh();
-}
+  // brings back initials quiz settings when quiz is retaken
+  function restartQuiz() {
+    currentIndex = 0;
+    score = 0;
+    scoreEl.innerHTML = "Score: " + score;
+    time = startingMinutes * 60;
+    text.style.display = "block";
+    stats.style.display = "block";
+    result.innerHTML = "You got this!";
+    gameOver.textContent = "";
+    myInterval = setInterval(updateCountdown, 1000);
+    quesh();
+  }
 
-{
-  /* <h1 id="init" class="scorepage">Add your initials to submit your score.</h1>
-<input class="scorepage" id="initials"/>
-<button id="submit" class="scorepage" onclick="onSubmitScore()";>Submit Score</button>
-<div class="scorepage" id="high-scores"></div>
-<button class="scorepage" id="hide">Hide Scores</button> */
-}

@@ -1,0 +1,24 @@
+body {
+    justify-content: center;
+    text-align: center;
+    background-color: palegoldenrod;
+    font-family: 'sans-serif'; 
+}
+
+#showAnswers
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    height: 100px;
+    width: 105px;  
+} 
+
+button:hover {
+    background-color:aquamarine;
+}
+
