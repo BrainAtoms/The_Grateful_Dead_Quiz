@@ -32,6 +32,12 @@ button {
     }
 }
 
+@media screen and (max-width: 768px) {
+    button, #start-button {
+        background-color: transparent; /* Remove color on mobile */
+    }
+}
+
 #start-button {
     display: flex;
     justify-content: center;
