@@ -17,7 +17,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #719df4;
+    background-color: burlywood;
     margin: 20px auto 0;
     height: 100px;
     width: 105px;
@@ -32,7 +32,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #719df4;
+    background-color: burlywood;
     margin: 20px auto 0;
     height: 100px;
     width: 105px;
@@ -42,21 +42,9 @@ button {
     cursor: pointer; 
 }
 
-button:hover {
-    background-color:aquamarine;
-}
-
-#start-button:hover {
-    background-color:aquamarine;
-}
-
-.scorepage button:hover {
-    background-color:aquamarine;
-}
-
 @media (max-width: 768px) { /* Adjust the max-width as needed */
     button, #start-button {
-        background-color: antiquewhite; 
+        background-color: burlywood; 
     }
 }
 
@@ -70,7 +58,7 @@ button:hover {
 /* Override hover effect for mobile */
 @media (hover: none) {
     button:hover, #start-button:hover {
-        background-color: antiquewhite; 
+        background-color: burlywood; 
     }
 }
 
