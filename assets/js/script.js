@@ -264,12 +264,16 @@ const questions = [
 
 var buttonA = document.createElement("button");
 buttonA.setAttribute("id", "A");
+buttonA.setAttribute("type", "button");
 var buttonB = document.createElement("button");
 buttonB.setAttribute("id", "B");
+buttonB.setAttribute("type", "button");
 var buttonC = document.createElement("button");
 buttonC.setAttribute("id", "C");
+buttonC.setAttribute("type", "button");
 var buttonD = document.createElement("button");
 buttonD.setAttribute("id", "D");
+buttonD.setAttribute("type", "button");
 
 const result = document.getElementById("result");
 const scoreEl = document.getElementById("score");
