@@ -7,28 +7,50 @@ body {
 }
 
 input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    }
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
 
 button {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px; 
+    margin: 20px auto 0;
     height: 100px;
-    width: 105px;  
-} 
+    width: 105px;
+    background-color:#719df4;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding inside the button */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+#start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto 0;
+    height: 100px;
+    width: 105px;
+    background-color:#719df4;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding inside the button */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
 
 .scorepage button:hover {
     background-color:aquamarine;
 }
 
 button:hover {
+    background-color:aquamarine;
+}
+
+#start-button:hover {
     background-color:aquamarine;
 }
 
@@ -41,6 +63,7 @@ button:hover {
     max-height: 400px;
     width:400px;
     padding:10px;
+    margin-bottom: 50%;
 }
 
 #final-score {
