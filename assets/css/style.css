@@ -26,9 +26,11 @@ button {
     cursor: pointer; /* Show pointer cursor on hover */
 }
 
-@media (hover: hover) {
-    button:hover { color: none; }
-  }
+@media (hover: none) {
+    button:hover {
+        background-color: initial; 
+    }
+}
 
 #start-button {
     display: flex;
@@ -44,9 +46,11 @@ button {
     cursor: pointer; /* Show pointer cursor on hover */
 }
 
-@media (hover: hover) {
-    #start-button:hover { color: none; }
-  }
+@media (hover: none) {
+    #start-button:hover {
+        background-color: initial; /* Keep the same color on hover for mobile */
+    }
+}
 
 .scorepage button:hover {
     background-color:aquamarine;
