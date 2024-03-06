@@ -26,7 +26,7 @@ button {
     cursor: pointer; /* Show pointer cursor on hover */
 }
 
-@media (hover: none) {
+@media (hover: hover) {
     button:hover { color: inherit; }
   }
 
@@ -44,7 +44,7 @@ button {
     cursor: pointer; /* Show pointer cursor on hover */
 }
 
-@media (hover: none) {
+@media (hover: hover) {
     #start-button:hover { color: inherit; }
   }
 
