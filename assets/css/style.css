@@ -26,23 +26,6 @@ button {
     cursor: pointer; /* Show pointer cursor on hover */
 }
 
-@media (hover: none) {
-    button:hover {
-        background-color: transparent; 
-    }
-}
-
-@media screen and (max-width: 768px) {
-    button, #start-button {
-        background-color: transparent; /* Remove color on mobile */
-    }
-}
-
-button:focus, #start-button:focus {
-    outline: none; /* Remove the default focus outline */
-    /* Add any additional styles for the focus state if needed */
-}
-
 #start-button {
     display: flex;
     justify-content: center;
@@ -57,22 +40,36 @@ button:focus, #start-button:focus {
     cursor: pointer; 
 }
 
-@media (hover: none) {
-    #start-button:hover {
-        background-color: transparent; 
-    }
-}
-
-.scorepage button:hover {
-    background-color:aquamarine;
-}
-
 button:hover {
     background-color:aquamarine;
 }
 
 #start-button:hover {
     background-color:aquamarine;
+}
+
+.scorepage button:hover {
+    background-color:aquamarine;
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    button, #start-button {
+        background-color: transparent; /* Remove color on mobile */
+    }
+}
+
+/* Hover effect for web */
+@media (hover: hover) {
+    button:hover, #start-button:hover {
+        background-color: lightblue; /* Change color on hover for web */
+    }
+}
+
+/* Override hover effect for mobile */
+@media (hover: none) {
+    button:hover, #start-button:hover {
+        background-color: transparent; /* Remove color on hover for mobile */
+    }
 }
 
 .container {
