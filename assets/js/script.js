@@ -107,17 +107,6 @@ const questions = [
   },
   {
     question:
-      "Which audio engineer is responsible for the recording of Cornell 5/8/77?",
-    choices: [
-      "Betty Cantor-Jackson",
-      "Dan Healy",
-      "Owsley Stanley",
-      "Bob Heil",
-    ],
-    correctAnswer: "Betty Cantor-Jackson",
-  },
-  {
-    question:
       "Which country's basketball team did The Grateful Dead help play in the 1988 Olympics",
     choices: ["Latvia", "Romania", "Lithuania", "Estonia"],
     correctAnswer: "Lithuania",
@@ -192,6 +181,17 @@ const questions = [
       "Wharf Rats",
     ],
     correctAnswer: "Wharf Rats",
+  },
+  {
+    question:
+      "Which audio engineer is responsible for the recording of Cornell 5/8/77?",
+    choices: [
+      "Betty Cantor-Jackson",
+      "Dan Healy",
+      "Owsley Stanley",
+      "Bob Heil",
+    ],
+    correctAnswer: "Betty Cantor-Jackson",
   },
   {
     question:
