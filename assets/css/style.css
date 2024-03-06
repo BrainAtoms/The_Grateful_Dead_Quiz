@@ -28,7 +28,7 @@ button {
 
 @media (hover: none) {
     button:hover {
-        background-color: initial; 
+        background-color: transparent; 
     }
 }
 
@@ -40,15 +40,15 @@ button {
     margin: 20px auto 0;
     height: 100px;
     width: 105px;
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    padding: 10px; /* Add padding inside the button */
-    cursor: pointer; /* Show pointer cursor on hover */
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px; 
+    cursor: pointer; 
 }
 
 @media (hover: none) {
     #start-button:hover {
-        background-color: initial; /* Keep the same color on hover for mobile */
+        background-color: transparent; 
     }
 }
 
