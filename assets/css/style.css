@@ -6,6 +6,12 @@ body {
     font-family: 'sans-serif'; 
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+
 button {
     display:flex;
     justify-content: center;
