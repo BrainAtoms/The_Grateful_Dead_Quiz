@@ -20,12 +20,15 @@ button {
     margin: 20px auto 0;
     height: 100px;
     width: 105px;
-    background-color:#719df4;
     border: none; /* Remove default border */
     border-radius: 5px; /* Add border radius for rounded corners */
     padding: 10px; /* Add padding inside the button */
     cursor: pointer; /* Show pointer cursor on hover */
 }
+
+@media (hover: none) {
+    button:hover { color: inherit; }
+  }
 
 #start-button {
     display: flex;
@@ -35,12 +38,15 @@ button {
     margin: 20px auto 0;
     height: 100px;
     width: 105px;
-    background-color:#719df4;
     border: none; /* Remove default border */
     border-radius: 5px; /* Add border radius for rounded corners */
     padding: 10px; /* Add padding inside the button */
     cursor: pointer; /* Show pointer cursor on hover */
 }
+
+@media (hover: none) {
+    #start-button:hover { color: inherit; }
+  }
 
 .scorepage button:hover {
     background-color:aquamarine;
