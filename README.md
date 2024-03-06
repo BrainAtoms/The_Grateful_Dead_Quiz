@@ -2,7 +2,7 @@
 
 The Grateful Dead Quiz was created as a resource for people interested in The Grateful Dead to test their knowledge. The quiz is multiple choice allowing users to click on their choice and see whether they clicked the correct or incorrect answer. At the end of the quiz, users can submit their own score to a score page if they desire and then be allowed to retake the quiz if they feel they need to. This web page uses HTML and CSS to appear neat and presentable to users. The website also uses Javascript to give the user a sastisfying interactive experience. 
 
-# ![Screen Shot 2024-03-06 at 1 22 13 PM](https://github.com/BrainAtoms/The_Grateful_Dead_Quiz/assets/61917285/ee3299a8-09fe-4f73-9f05-06077f432615)
+# ![Screen Shot 2024-03-06 at 6 45 31 PM](https://github.com/BrainAtoms/The_Grateful_Dead_Quiz/assets/61917285/16faa657-baa2-4f28-851e-2c72d5c7a9af)
 
 #
 [The Grateful Dead Quiz](https://brainatoms.github.io/The_Grateful_Dead_Quiz/)
