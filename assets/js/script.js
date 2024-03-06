@@ -141,17 +141,6 @@ const questions = [
   },
   {
     question:
-      "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
-    choices: [
-      "It Must Have Been The Roses",
-      "To Lay Me Down",
-      "The Wheel",
-      "Stella Blue",
-    ],
-    correctAnswer: "To Lay Me Down",
-  },
-  {
-    question:
       "The parking lots for Grateful Dead concerts eventually became vending areas for fans and named ____________?",
     choices: [
       "Shakedown Street",
@@ -168,9 +157,9 @@ const questions = [
   },
   {
     question:
-      "On what date did The Grateful Dead debut Eyes of the World on the live stage?",
-    choices: ["2/9/1973", "12/25/1972", "3/17/1973", "11/23/1972"],
-    correctAnswer: "2/9/1973",
+      "On what date did The Grateful Dead debut Lazy River Road on the live stage?",
+    choices: ["4/16/1994", "2/21/1993", "3/2/1992", "12/6/1991"],
+    correctAnswer: "2/21/1993",
   },
   {
     question:
@@ -234,7 +223,18 @@ const questions = [
   },
   {
     question:
-      "What charitable non-profit organization was created by members of The Grateful Dead and friends to provide community support for creative endeavors?",
+      "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
+    choices: [
+      "It Must Have Been The Roses",
+      "To Lay Me Down",
+      "The Wheel",
+      "Stella Blue",
+    ],
+    correctAnswer: "To Lay Me Down",
+  },
+  {
+    question:
+      "What charitable non-profit organization was created in 1983 by members of The Grateful Dead and friends to provide community support for creative endeavors?",
     choices: [
       "Garcia Foundation",
       "Rex Foundation",
@@ -259,7 +259,7 @@ const questions = [
       "Steal your face right off of your head",
     ],
     correctAnswer: "Steal your face right off of your head",
-  },
+  }
 ];
 
 var buttonA = document.createElement("button");
@@ -290,9 +290,13 @@ const btnStart = document.getElementById("start-button");
 const countdownEl = document.getElementById("countdown");
 
 // begins timer when start button is pressed
-btnStart.addEventListener("click", () => {
-  myInterval = setInterval(updateCountdown, 1000);
-  btnStart.style.display = "none";
+document.addEventListener("DOMContentLoaded", function() {
+  if (btnStart) {
+    btnStart.addEventListener("click", () => {
+      myInterval = setInterval(updateCountdown, 1000);
+      btnStart.style.display = "none";
+    });
+  }
 });
 
 // updates timer every interval and disables buttons when time = 0
@@ -365,18 +369,16 @@ const onAnswerClick = (event) => {
   }
 };
 
+
+
 // creates score page so that scores don't get lost when quiz is taken multiple times. Also stops timer when quiz ends and creates hide score button to hide scores.
 function goToScore() {
-  console.log("goToScore");
   let scoresHTML;
   if (score >= 25) {
     scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> Well dang! You are definitely on the bus! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
 <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
 <a style="text-decoration:none" href="The_Grateful_Dead_Quiz/answerkey.html"><button id="answers">View Answer Key</button></a>
 <h2 id="refresh">Refresh to go back to Main Page.</h2>
-<h3>Sources:</h3>
-  <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
-  <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
  </section>`;
   } else if (score >= 15 && score < 20) {
     scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> You have stepped on the bus. Welcome! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
@@ -400,8 +402,6 @@ function goToScore() {
     }
   }
 
-  console.log(scoresHTML);
-
   var optionsEl = document.getElementById("options");
   optionsEl.innerHTML = scoresHTML;
   text.style.display = "none";
@@ -411,15 +411,15 @@ function goToScore() {
   const initialsInput = document.getElementById("initials");
   const hideBtn = document.getElementById("hide");
   const submitBtn = document.getElementById("submit");
-  const highScore = document.getElementById("high-scores");
-  submitBtn.addEventListener("click", () => {
-    submitBtn.style.display = "none";
-    initialsInput.style.display = "none";
-  });
-  hideBtn.addEventListener("click", () => {
-    highScore.innerHTML = "";
-    hideBtn.style.display = "none";
-  });
+  // const highScore = document.getElementById("high-scores");
+  // submitBtn.addEventListener("click", () => {
+  //   submitBtn.style.display = "none";
+  //   initialsInput.style.display = "none";
+  // });
+  // hideBtn.addEventListener("click", () => {
+  //   highScore.innerHTML = "";
+  //   hideBtn.style.display = "none";
+  // });
 }
 
 // submits user initials obtained from input and respective score onto score page.
@@ -438,11 +438,6 @@ function goToScore() {
 //   });
 //   highScore.innerHTML = submittedScoresHTML;
 // }
-function hideButton(){
-
-  document.getElementById('showAnswers').style.visibility= 'hidden';
-  
-  }
 
 function answerKey() {
   const answers = questions.map(question => {
@@ -450,13 +445,14 @@ function answerKey() {
     <p><h3>Question:</h3>${question.question}</p>
     <p><h3>Choices:</h3>${question.choices.join(' / ')}</p>
     <p><h3>Correct Answer:</h3>${question.correctAnswer}</p>
-    </div>`
-  })
-  const answerKey = document.getElementById("answers")
-  answerKey.innerHTML = answers
+    </div>`;
+  });
+
+  const answerKeyContainer = document.getElementById("answers");
+  answerKeyContainer.innerHTML = answers.join('');
 
   const button = document.getElementById("showAnswers");
-  button.style.display = "none"
+  button.style.display = "none";
 }
 
   // brings back initials quiz settings when quiz is retaken
