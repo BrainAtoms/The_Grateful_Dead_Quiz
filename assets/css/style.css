@@ -38,6 +38,11 @@ button {
     }
 }
 
+button:focus, #start-button:focus {
+    outline: none; /* Remove the default focus outline */
+    /* Add any additional styles for the focus state if needed */
+}
+
 #start-button {
     display: flex;
     justify-content: center;
