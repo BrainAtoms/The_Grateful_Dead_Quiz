@@ -27,7 +27,7 @@ button {
 }
 
 @media (hover: hover) {
-    button:hover { color: inherit; }
+    button:hover { color: none; }
   }
 
 #start-button {
@@ -45,7 +45,7 @@ button {
 }
 
 @media (hover: hover) {
-    #start-button:hover { color: inherit; }
+    #start-button:hover { color: none; }
   }
 
 .scorepage button:hover {
