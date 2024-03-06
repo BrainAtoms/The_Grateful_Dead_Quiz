@@ -54,7 +54,7 @@ button:hover {
 
 @media (max-width: 768px) { /* Adjust the max-width as needed */
     button, #start-button {
-        background-color: transparent; /* Remove color on mobile */
+        background-color: whitesmoke; 
     }
 }
 
@@ -68,7 +68,7 @@ button:hover {
 /* Override hover effect for mobile */
 @media (hover: none) {
     button:hover, #start-button:hover {
-        background-color: transparent; /* Remove color on hover for mobile */
+        background-color: whitesmoke; 
     }
 }
 
