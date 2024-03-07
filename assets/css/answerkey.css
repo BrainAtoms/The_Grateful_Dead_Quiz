@@ -20,3 +20,11 @@ button:hover {
     background-color:aquamarine;
 }
 
+#home {
+    color: royalblue;
+}
+
+#home:hover {
+   color:brown;
+}
+
