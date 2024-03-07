@@ -45,6 +45,7 @@ button {
 @media (max-width: 768px) { /* Adjust the max-width as needed */
     button, #start-button {
         background-color: burlywood; 
+        color:black;
     }
 }
 
@@ -59,7 +60,6 @@ button {
 @media (hover: none) {
     button:hover, #start-button:hover {
         background-color: burlywood; 
-        color: black;
     }
 }
 
