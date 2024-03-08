@@ -12,17 +12,21 @@ input {
 appearance: none;
 }
 
-  button {
-    display:flex;
-    justify-content: center;
+#options {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    margin:50px;
+}
+
+  button {
     background-color: burlywood;
-    margin: 20px auto 0;
+    margin: 10px;
     height: 100px;
     width: 105px;
     border-radius: 5px; 
-    padding: 10px; 
+    /* padding: 10px;  */
     cursor: pointer; 
   }
 
@@ -70,22 +74,11 @@ appearance: none;
     margin-right: auto;
     max-height: 400px;
     width:400px;
-    padding:10px;
     margin-bottom: 50%;
 }
 
 #final-score {
     margin-right: 20px;
-}
-
-#high-scores {
-    display:center; 
-    text-align: center;
-    font-size: x-large;
-    margin-left: -20px;
-    max-height: 400px;
-    width:400px;
-    padding:10px;
 }
 
 a,#refresh{
