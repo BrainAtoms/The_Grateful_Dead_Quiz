@@ -11,287 +11,286 @@ const questions = [
     userAnswer: "",
     correctAnswer: "Jerome",
   },
-]
-//   {
-//     question:
-//       "How did Jerry lose the top two joints of his middle finger on his right hand?",
-//     choices: [
-//       "It happened in a caravan fire.",
-//       "It happened from a slammed door.",
-//       "It happened while his brother was chopping wood.",
-//       "It happened from a table saw accident.",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "It happened while his brother was chopping wood.",
-//   },
-//   {
-//     question: "When did Bob Weir meet Jerry Garcia?",
-//     choices: [
-//       "December 31st, 1963",
-//       "January 1st, 1964",
-//       "October 31st, 1962",
-//       "July 4th, 1961",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "December 31st, 1963",
-//   },
-//   {
-//     question: "What was the previous name for The Grateful Dead?",
-//     choices: [
-//       "The Sparrows",
-//       "Mother Goose's Downtown Jug Band",
-//       "Kingfish",
-//       "The Warlocks",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "The Warlocks",
-//   },
-//   {
-//     question:
-//       "Who was Bob Weir's primary songwriting partner for The Grateful Dead?",
-//     choices: [
-//       "Robert Hunter",
-//       "Jerry Garcia",
-//       "John Perry Barlow",
-//       "Jack Straw",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "John Perry Barlow",
-//   },
-//   {
-//     question: "What year did Keith and Donna Godchaux join The Grateful Dead?",
-//     choices: ["1971", "1972", "1970", "1973"],
-//     userAnser: "",
-//     correctAnswer: "1971",
-//   },
-//   {
-//     question: "Who was The Grateful Dead's original frontman?",
-//     choices: [
-//       "Robert Hunter",
-//       "Bob Weir",
-//       "Jerry Garcia",
-//       "Ron 'Pigpen' McKernan",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Ron 'Pigpen' McKernan",
-//   },
-//   {
-//     question:
-//       "Who hosted The Acid Tests where The Grateful Dead would frequently perform during the 60's?",
-//     choices: ["Neal Cassady", "Ken Kesey", "Tom Wolfe", "Timothy Leary"],
-//     userAnser: "",
-//     correctAnswer: "Ken Kesey",
-//   },
-//   {
-//     question:
-//       "Police raided The Grateful Dead's residency at 710 Ashbury St. on marijuana charges when?",
-//     choices: [
-//       "Oct. 2nd, 1967",
-//       "Oct. 6th, 1968",
-//       "Oct. 3rd, 1966",
-//       "Oct. 11th, 1969",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Oct. 2nd, 1967",
-//   },
-//   {
-//     question:
-//       "Bill Kreutzmann and Mickey Hart together have been nicknamed _________________?",
-//     choices: [
-//       "Planet Drum",
-//       "The Other Ones",
-//       "Wolf Bros",
-//       "The Rhythm Devils",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "The Rhythm Devils",
-//   },
-//   {
-//     question:
-//       "New Potato Caboose was composed by Phil Lesh and ______________?",
-//     choices: ["Bob Weir", "Tom Constanten", "Bobby Peterson", "Robert Hunter"],
-//     userAnser: "",
-//     correctAnswer: "Bobby Peterson",
-//   },
-//   {
-//     question: "Which guitar did Jerry Garcia play during Cornell 5/8/77?",
-//     choices: ["Alligator", "Travis Bean", "Wolf", "Tiger"],
-//     userAnser: "",
-//     correctAnswer: "Travis Bean",
-//   },
-//   {
-//     question:
-//       "Which country's basketball team did The Grateful Dead help play in the 1988 Olympics",
-//     choices: ["Latvia", "Romania", "Lithuania", "Estonia"],
-//     userAnser: "",
-//     correctAnswer: "Lithuania",
-//   },
-//   {
-//     question:
-//       "Where did The Grateful Dead perform during September 15th and 16th of 1978?",
-//     choices: ["Pompeii", "Stonehenge", "Easter Island", "Giza Necropolis"],
-//     userAnser: "",
-//     correctAnswer: "Giza Necropolis",
-//   },
-//   {
-//     question:
-//       "On what date occured The Summer Jam at Watkins Glen in which The Grateful Dead performed along with The Allman Brothers Band and The Band?",
-//     choices: [
-//       "July 4th, 1972",
-//       "July 12th, 1971",
-//       "July 20th, 1974",
-//       "July 28th, 1973",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "July 28th, 1973",
-//   },
-//   {
-//     question:
-//       "The parking lots for Grateful Dead concerts eventually became vending areas for fans and named ____________?",
-//     choices: [
-//       "Shakedown Street",
-//       "The Golden Road",
-//       "Promised Land",
-//       "Terrapin Station",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Shakedown Street",
-//   },
-//   {
-//     question: "Who helped manage The Grateful Dead's infamous Europe 72 tour?",
-//     choices: ["Ron Rakow", "Leon Gast", "Sam Cutler", "Bill Graham"],
-//     userAnser: "",
-//     correctAnswer: "Sam Cutler",
-//   },
-//   {
-//     question:
-//       "On what date did The Grateful Dead debut Lazy River Road on the live stage?",
-//     choices: ["4/16/1994", "2/21/1993", "3/2/1992", "12/6/1991"],
-//     userAnser: "",
-//     correctAnswer: "2/21/1993",
-//   },
-//   {
-//     question:
-//       "Who was the last performing keyboard player for The Grateful Dead?",
-//     choices: [
-//       "Brent Mydland",
-//       "Bruce Hornsby",
-//       "Jeff Chimenti",
-//       "Vince Welnick",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Vince Welnick",
-//   },
-//   {
-//     question: "Which song was never recorded for a Grateful Dead studio album?",
-//     choices: [
-//       "Here Comes Sunshine",
-//       "U.S. Blues",
-//       "Bertha",
-//       "China Cat Sunflower",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Bertha",
-//   },
-//   {
-//     question:
-//       "The section of the crowd at a Grateful Dead concert who were drug and alchohol-free were known as?",
-//     choices: [
-//       "Sugar Magnolias",
-//       "Uncle John's Band",
-//       "Scarlet Begonias",
-//       "Wharf Rats",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Wharf Rats",
-//   },
-//   {
-//     question:
-//       "Which audio engineer is responsible for the recording of Cornell 5/8/77?",
-//     choices: [
-//       "Betty Cantor-Jackson",
-//       "Dan Healy",
-//       "Owsley Stanley",
-//       "Bob Heil",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Betty Cantor-Jackson",
-//   },
-//   {
-//     question:
-//       "What television program did The Grateful Dead appear on 1/18/1969?",
-//     choices: [
-//       "The Beat Club",
-//       "Playboy After Dark",
-//       "The Hippie Temptation",
-//       "Saturday Night Live",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Playboy After Dark",
-//   },
-//   {
-//     question:
-//       "Which album was not released under Grateful Dead Records after they fulfilled their contract with Warner Bros.?",
-//     choices: [
-//       "Blues For Allah",
-//       "Terrapin Station",
-//       "From The Mars Hotel",
-//       "Wake Of The Flood",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Terrapin Station",
-//   },
-//   {
-//     question:
-//       "What was the first keyboard that Brent Mydland played with The Grateful Dead",
-//     choices: ["Fender Rhodes", "Kurzweil PC-88", "Yamaha CP-70", "Yamaha GS-1"],
-//     userAnser: "",
-//     correctAnswer: "Fender Rhodes",
-//   },
-//   {
-//     question:
-//       "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
-//     choices: [
-//       "It Must Have Been The Roses",
-//       "To Lay Me Down",
-//       "The Wheel",
-//       "Stella Blue",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "To Lay Me Down",
-//   },
-//   {
-//     question:
-//       "What charitable non-profit organization was created in 1983 by members of The Grateful Dead and friends to provide community support for creative endeavors?",
-//     choices: [
-//       "Garcia Foundation",
-//       "Rex Foundation",
-//       "Hart Foundation",
-//       "Parish Foundation",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Rex Foundation",
-//   },
-//   {
-//     question:
-//       "Which Rock n' Roll legend did The Grateful Dead back up in New York on 3/25/72?",
-//     choices: ["Chuck Berry", "Gene Vincent", "Bo Diddley", "Wanda Jackson"],
-//     userAnser: "",
-//     correctAnswer: "Bo Diddley",
-//   },
-//   {
-//     question:
-//       "Complete this lyric: 'Like I told you, what I said, ___________________________________'",
-//     choices: [
-//       "Can't believe all the books that I've read",
-//       "When you get back you better butter my bread",
-//       "Don't you know my name is Fred",
-//       "Steal your face right off of your head",
-//     ],
-//     userAnser: "",
-//     correctAnswer: "Steal your face right off of your head",
-//   }
-// ];
+  {
+    question:
+      "How did Jerry lose the top two joints of his middle finger on his right hand?",
+    choices: [
+      "It happened in a caravan fire.",
+      "It happened from a slammed door.",
+      "It happened while his brother was chopping wood.",
+      "It happened from a table saw accident.",
+    ],
+    userAnser: "",
+    correctAnswer: "It happened while his brother was chopping wood.",
+  },
+  {
+    question: "When did Bob Weir meet Jerry Garcia?",
+    choices: [
+      "December 31st, 1963",
+      "January 1st, 1964",
+      "October 31st, 1962",
+      "July 4th, 1961",
+    ],
+    userAnser: "",
+    correctAnswer: "December 31st, 1963",
+  },
+  {
+    question: "What was the previous name for The Grateful Dead?",
+    choices: [
+      "The Sparrows",
+      "Mother Goose's Downtown Jug Band",
+      "Kingfish",
+      "The Warlocks",
+    ],
+    userAnser: "",
+    correctAnswer: "The Warlocks",
+  },
+  {
+    question:
+      "Who was Bob Weir's primary songwriting partner for The Grateful Dead?",
+    choices: [
+      "Robert Hunter",
+      "Jerry Garcia",
+      "John Perry Barlow",
+      "Jack Straw",
+    ],
+    userAnser: "",
+    correctAnswer: "John Perry Barlow",
+  },
+  {
+    question: "What year did Keith and Donna Godchaux join The Grateful Dead?",
+    choices: ["1971", "1972", "1970", "1973"],
+    userAnser: "",
+    correctAnswer: "1971",
+  },
+  {
+    question: "Who was The Grateful Dead's original frontman?",
+    choices: [
+      "Robert Hunter",
+      "Bob Weir",
+      "Jerry Garcia",
+      "Ron 'Pigpen' McKernan",
+    ],
+    userAnser: "",
+    correctAnswer: "Ron 'Pigpen' McKernan",
+  },
+  {
+    question:
+      "Who hosted The Acid Tests where The Grateful Dead would frequently perform during the 60's?",
+    choices: ["Neal Cassady", "Ken Kesey", "Tom Wolfe", "Timothy Leary"],
+    userAnser: "",
+    correctAnswer: "Ken Kesey",
+  },
+  {
+    question:
+      "Police raided The Grateful Dead's residency at 710 Ashbury St. on marijuana charges when?",
+    choices: [
+      "Oct. 2nd, 1967",
+      "Oct. 6th, 1968",
+      "Oct. 3rd, 1966",
+      "Oct. 11th, 1969",
+    ],
+    userAnser: "",
+    correctAnswer: "Oct. 2nd, 1967",
+  },
+  {
+    question:
+      "Bill Kreutzmann and Mickey Hart together have been nicknamed _________________?",
+    choices: [
+      "Planet Drum",
+      "The Other Ones",
+      "Wolf Bros",
+      "The Rhythm Devils",
+    ],
+    userAnser: "",
+    correctAnswer: "The Rhythm Devils",
+  },
+  {
+    question:
+      "New Potato Caboose was composed by Phil Lesh and ______________?",
+    choices: ["Bob Weir", "Tom Constanten", "Bobby Peterson", "Robert Hunter"],
+    userAnser: "",
+    correctAnswer: "Bobby Peterson",
+  },
+  {
+    question: "Which guitar did Jerry Garcia play during Cornell 5/8/77?",
+    choices: ["Alligator", "Travis Bean", "Wolf", "Tiger"],
+    userAnser: "",
+    correctAnswer: "Travis Bean",
+  },
+  {
+    question:
+      "Which country's basketball team did The Grateful Dead help play in the 1988 Olympics",
+    choices: ["Latvia", "Romania", "Lithuania", "Estonia"],
+    userAnser: "",
+    correctAnswer: "Lithuania",
+  },
+  {
+    question:
+      "Where did The Grateful Dead perform during September 15th and 16th of 1978?",
+    choices: ["Pompeii", "Stonehenge", "Easter Island", "Giza Necropolis"],
+    userAnser: "",
+    correctAnswer: "Giza Necropolis",
+  },
+  {
+    question:
+      "On what date occured The Summer Jam at Watkins Glen in which The Grateful Dead performed along with The Allman Brothers Band and The Band?",
+    choices: [
+      "July 4th, 1972",
+      "July 12th, 1971",
+      "July 20th, 1974",
+      "July 28th, 1973",
+    ],
+    userAnser: "",
+    correctAnswer: "July 28th, 1973",
+  },
+  {
+    question:
+      "The parking lots for Grateful Dead concerts eventually became vending areas for fans and named ____________?",
+    choices: [
+      "Shakedown Street",
+      "The Golden Road",
+      "Promised Land",
+      "Terrapin Station",
+    ],
+    userAnser: "",
+    correctAnswer: "Shakedown Street",
+  },
+  {
+    question: "Who helped manage The Grateful Dead's infamous Europe 72 tour?",
+    choices: ["Ron Rakow", "Leon Gast", "Sam Cutler", "Bill Graham"],
+    userAnser: "",
+    correctAnswer: "Sam Cutler",
+  },
+  {
+    question:
+      "On what date did The Grateful Dead debut Lazy River Road on the live stage?",
+    choices: ["4/16/1994", "2/21/1993", "3/2/1992", "12/6/1991"],
+    userAnser: "",
+    correctAnswer: "2/21/1993",
+  },
+  {
+    question:
+      "Who was the last performing keyboard player for The Grateful Dead?",
+    choices: [
+      "Brent Mydland",
+      "Bruce Hornsby",
+      "Jeff Chimenti",
+      "Vince Welnick",
+    ],
+    userAnser: "",
+    correctAnswer: "Vince Welnick",
+  },
+  {
+    question: "Which song was never recorded for a Grateful Dead studio album?",
+    choices: [
+      "Here Comes Sunshine",
+      "U.S. Blues",
+      "Bertha",
+      "China Cat Sunflower",
+    ],
+    userAnser: "",
+    correctAnswer: "Bertha",
+  },
+  {
+    question:
+      "The section of the crowd at a Grateful Dead concert who were drug and alchohol-free were known as?",
+    choices: [
+      "Sugar Magnolias",
+      "Uncle John's Band",
+      "Scarlet Begonias",
+      "Wharf Rats",
+    ],
+    userAnser: "",
+    correctAnswer: "Wharf Rats",
+  },
+  {
+    question:
+      "Which audio engineer is responsible for the recording of Cornell 5/8/77?",
+    choices: [
+      "Betty Cantor-Jackson",
+      "Dan Healy",
+      "Owsley Stanley",
+      "Bob Heil",
+    ],
+    userAnser: "",
+    correctAnswer: "Betty Cantor-Jackson",
+  },
+  {
+    question:
+      "What television program did The Grateful Dead appear on 1/18/1969?",
+    choices: [
+      "The Beat Club",
+      "Playboy After Dark",
+      "The Hippie Temptation",
+      "Saturday Night Live",
+    ],
+    userAnser: "",
+    correctAnswer: "Playboy After Dark",
+  },
+  {
+    question:
+      "Which album was not released under Grateful Dead Records after they fulfilled their contract with Warner Bros.?",
+    choices: [
+      "Blues For Allah",
+      "Terrapin Station",
+      "From The Mars Hotel",
+      "Wake Of The Flood",
+    ],
+    userAnser: "",
+    correctAnswer: "Terrapin Station",
+  },
+  {
+    question:
+      "What was the first keyboard that Brent Mydland played with The Grateful Dead",
+    choices: ["Fender Rhodes", "Kurzweil PC-88", "Yamaha CP-70", "Yamaha GS-1"],
+    userAnser: "",
+    correctAnswer: "Fender Rhodes",
+  },
+  {
+    question:
+      "Robert Hunter wrote the lyrics to Brokedown Palace, Ripple and what other song on the same day in London, 1970?",
+    choices: [
+      "It Must Have Been The Roses",
+      "To Lay Me Down",
+      "The Wheel",
+      "Stella Blue",
+    ],
+    userAnser: "",
+    correctAnswer: "To Lay Me Down",
+  },
+  {
+    question:
+      "What charitable non-profit organization was created in 1983 by members of The Grateful Dead and friends to provide community support for creative endeavors?",
+    choices: [
+      "Garcia Foundation",
+      "Rex Foundation",
+      "Hart Foundation",
+      "Parish Foundation",
+    ],
+    userAnser: "",
+    correctAnswer: "Rex Foundation",
+  },
+  {
+    question:
+      "Which Rock n' Roll legend did The Grateful Dead back up in New York on 3/25/72?",
+    choices: ["Chuck Berry", "Gene Vincent", "Bo Diddley", "Wanda Jackson"],
+    userAnser: "",
+    correctAnswer: "Bo Diddley",
+  },
+  {
+    question:
+      "Complete this lyric: 'Like I told you, what I said, ___________________________________'",
+    choices: [
+      "Can't believe all the books that I've read",
+      "When you get back you better butter my bread",
+      "Don't you know my name is Fred",
+      "Steal your face right off of your head",
+    ],
+    userAnser: "",
+    correctAnswer: "Steal your face right off of your head",
+  }
+];
 
 var buttonA = document.createElement("button");
 buttonA.setAttribute("id", "A");
@@ -467,7 +466,7 @@ function goToScore() {
 
 function answerKey() {
   const answers = questions.map(question => {
-    return `<div>
+    return `<div id="answerKey">
     <p><h3>Question:</h3>${question.question}</p>
     <p><h3>Choices:</h3>${question.choices.join(' / ')}</p>
     <p><h3>Your Answer:</h3>${question.userAnswer}</p>
