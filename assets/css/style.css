@@ -4,7 +4,6 @@ body {
     text-align: center;
     background-color: palegoldenrod;
     font-family: 'sans-serif'; 
-    margin-bottom: 100%;
 }
 
 input {
@@ -54,6 +53,9 @@ appearance: none;
     #answerKey {
         font-size: smaller;
     }
+    body {
+        margin-bottom: 100%;
+    }
 }
 
 /* Hover effect for web */
@@ -79,7 +81,7 @@ appearance: none;
     margin-right: auto;
     max-height: 400px;
     width:400px;
-    margin-bottom: 50%;
+    margin-bottom: -5%;
 }
 
 #final-score {
