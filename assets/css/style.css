@@ -4,6 +4,7 @@ body {
     text-align: center;
     background-color: palegoldenrod;
     font-family: 'sans-serif'; 
+    margin-bottom: 50%;
 }
 
 input {
@@ -54,7 +55,7 @@ appearance: none;
         font-size: smaller;
     }
     body {
-        margin-bottom: 100%;
+        margin-bottom: 150%;
     }
 }
 
