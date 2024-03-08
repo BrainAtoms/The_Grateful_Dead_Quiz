@@ -12,8 +12,8 @@ input {
 appearance: none;
 }
 
-button {
-    display: flex;
+  button {
+    display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -21,14 +21,13 @@ button {
     margin: 20px auto 0;
     height: 100px;
     width: 105px;
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    padding: 10px; /* Add padding inside the button */
-    cursor: pointer; /* Show pointer cursor on hover */
-}
+    border-radius: 5px; 
+    padding: 10px; 
+    cursor: pointer; 
+  }
 
 #start-button {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -36,7 +35,6 @@ button {
     margin: 20px auto 0;
     height: 100px;
     width: 105px;
-    border: none; 
     border-radius: 5px; 
     padding: 10px; 
     cursor: pointer; 
@@ -65,7 +63,7 @@ button {
 }
 
 .container {
-    display:center; 
+    display: center; 
     text-align: center;
     font-size: x-large;
     margin-left: auto;
