@@ -418,10 +418,10 @@ function goToScore() {
     <div id="answers">
     </div>
     <h3>Sources:</h3>
+    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page.</a></h2>
     <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
     <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
     <h4>The Setlist Wiki, www.setlist.fm/. Accessed 6 Mar. 2024. </h4>
-    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page.</a></h2>
  </section>`;
   } else if (score >= 15 && score < 20) {
     scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> You have stepped on the bus. Welcome! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
@@ -430,11 +430,11 @@ function goToScore() {
     <button id="showAnswers" onclick="answerKey()">Show Answers</button>
     <div id="answers">
     </div>
+    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page.</a></h2>
     <h3>Sources:</h3>
     <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
     <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
     <h4>The Setlist Wiki, www.setlist.fm/. Accessed 6 Mar. 2024. </h4>
-    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page.</a></h2>
  </section>`;
   } else if (score < 10) {
     {
@@ -444,11 +444,11 @@ function goToScore() {
     <button id="showAnswers" onclick="answerKey()">Show Answers</button>
     <div id="answers">
     </div>
+    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page</a></h2>
     <h3>Sources:</h3>
     <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
     <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
     <h4>The Setlist Wiki, www.setlist.fm/. Accessed 6 Mar. 2024. </h4>
-    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page</a></h2>
  </section>`;
     }
   }
