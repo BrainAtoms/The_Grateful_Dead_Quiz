@@ -2,11 +2,13 @@ const questions = [
   {
     question: "The Grateful Dead formed where?",
     choices: ["Los Angeles", "Santa Cruz", "Palo Alto", "Sacramento"],
+    userAnswer: "",
     correctAnswer: "Palo Alto",
   },
   {
     question: "Jerry Garcia's actual first name is what?",
     choices: ["Jerome", "Jerald", "Jeremiah", "Jeron"],
+    userAnswer: "",
     correctAnswer: "Jerome",
   },
   {
@@ -18,6 +20,7 @@ const questions = [
       "It happened while his brother was chopping wood.",
       "It happened from a table saw accident.",
     ],
+    userAnser: "",
     correctAnswer: "It happened while his brother was chopping wood.",
   },
   {
@@ -28,6 +31,7 @@ const questions = [
       "October 31st, 1962",
       "July 4th, 1961",
     ],
+    userAnser: "",
     correctAnswer: "December 31st, 1963",
   },
   {
@@ -38,6 +42,7 @@ const questions = [
       "Kingfish",
       "The Warlocks",
     ],
+    userAnser: "",
     correctAnswer: "The Warlocks",
   },
   {
@@ -49,11 +54,13 @@ const questions = [
       "John Perry Barlow",
       "Jack Straw",
     ],
+    userAnser: "",
     correctAnswer: "John Perry Barlow",
   },
   {
     question: "What year did Keith and Donna Godchaux join The Grateful Dead?",
     choices: ["1971", "1972", "1970", "1973"],
+    userAnser: "",
     correctAnswer: "1971",
   },
   {
@@ -64,12 +71,14 @@ const questions = [
       "Jerry Garcia",
       "Ron 'Pigpen' McKernan",
     ],
+    userAnser: "",
     correctAnswer: "Ron 'Pigpen' McKernan",
   },
   {
     question:
       "Who hosted The Acid Tests where The Grateful Dead would frequently perform during the 60's?",
     choices: ["Neal Cassady", "Ken Kesey", "Tom Wolfe", "Timothy Leary"],
+    userAnser: "",
     correctAnswer: "Ken Kesey",
   },
   {
@@ -81,6 +90,7 @@ const questions = [
       "Oct. 3rd, 1966",
       "Oct. 11th, 1969",
     ],
+    userAnser: "",
     correctAnswer: "Oct. 2nd, 1967",
   },
   {
@@ -92,29 +102,34 @@ const questions = [
       "Wolf Bros",
       "The Rhythm Devils",
     ],
+    userAnser: "",
     correctAnswer: "The Rhythm Devils",
   },
   {
     question:
       "New Potato Caboose was composed by Phil Lesh and ______________?",
     choices: ["Bob Weir", "Tom Constanten", "Bobby Peterson", "Robert Hunter"],
+    userAnser: "",
     correctAnswer: "Bobby Peterson",
   },
   {
     question: "Which guitar did Jerry Garcia play during Cornell 5/8/77?",
     choices: ["Alligator", "Travis Bean", "Wolf", "Tiger"],
+    userAnser: "",
     correctAnswer: "Travis Bean",
   },
   {
     question:
       "Which country's basketball team did The Grateful Dead help play in the 1988 Olympics",
     choices: ["Latvia", "Romania", "Lithuania", "Estonia"],
+    userAnser: "",
     correctAnswer: "Lithuania",
   },
   {
     question:
       "Where did The Grateful Dead perform during September 15th and 16th of 1978?",
     choices: ["Pompeii", "Stonehenge", "Easter Island", "Giza Necropolis"],
+    userAnser: "",
     correctAnswer: "Giza Necropolis",
   },
   {
@@ -126,6 +141,7 @@ const questions = [
       "July 20th, 1974",
       "July 28th, 1973",
     ],
+    userAnser: "",
     correctAnswer: "July 28th, 1973",
   },
   {
@@ -137,17 +153,20 @@ const questions = [
       "Promised Land",
       "Terrapin Station",
     ],
+    userAnser: "",
     correctAnswer: "Shakedown Street",
   },
   {
     question: "Who helped manage The Grateful Dead's infamous Europe 72 tour?",
     choices: ["Ron Rakow", "Leon Gast", "Sam Cutler", "Bill Graham"],
+    userAnser: "",
     correctAnswer: "Sam Cutler",
   },
   {
     question:
       "On what date did The Grateful Dead debut Lazy River Road on the live stage?",
     choices: ["4/16/1994", "2/21/1993", "3/2/1992", "12/6/1991"],
+    userAnser: "",
     correctAnswer: "2/21/1993",
   },
   {
@@ -159,6 +178,7 @@ const questions = [
       "Jeff Chimenti",
       "Vince Welnick",
     ],
+    userAnser: "",
     correctAnswer: "Vince Welnick",
   },
   {
@@ -169,6 +189,7 @@ const questions = [
       "Bertha",
       "China Cat Sunflower",
     ],
+    userAnser: "",
     correctAnswer: "Bertha",
   },
   {
@@ -180,6 +201,7 @@ const questions = [
       "Scarlet Begonias",
       "Wharf Rats",
     ],
+    userAnser: "",
     correctAnswer: "Wharf Rats",
   },
   {
@@ -191,6 +213,7 @@ const questions = [
       "Owsley Stanley",
       "Bob Heil",
     ],
+    userAnser: "",
     correctAnswer: "Betty Cantor-Jackson",
   },
   {
@@ -202,6 +225,7 @@ const questions = [
       "The Hippie Temptation",
       "Saturday Night Live",
     ],
+    userAnser: "",
     correctAnswer: "Playboy After Dark",
   },
   {
@@ -213,12 +237,14 @@ const questions = [
       "From The Mars Hotel",
       "Wake Of The Flood",
     ],
+    userAnser: "",
     correctAnswer: "Terrapin Station",
   },
   {
     question:
       "What was the first keyboard that Brent Mydland played with The Grateful Dead",
     choices: ["Fender Rhodes", "Kurzweil PC-88", "Yamaha CP-70", "Yamaha GS-1"],
+    userAnser: "",
     correctAnswer: "Fender Rhodes",
   },
   {
@@ -230,6 +256,7 @@ const questions = [
       "The Wheel",
       "Stella Blue",
     ],
+    userAnser: "",
     correctAnswer: "To Lay Me Down",
   },
   {
@@ -241,12 +268,14 @@ const questions = [
       "Hart Foundation",
       "Parish Foundation",
     ],
+    userAnser: "",
     correctAnswer: "Rex Foundation",
   },
   {
     question:
       "Which Rock n' Roll legend did The Grateful Dead back up in New York on 3/25/72?",
     choices: ["Chuck Berry", "Gene Vincent", "Bo Diddley", "Wanda Jackson"],
+    userAnser: "",
     correctAnswer: "Bo Diddley",
   },
   {
@@ -258,6 +287,7 @@ const questions = [
       "Don't you know my name is Fred",
       "Steal your face right off of your head",
     ],
+    userAnser: "",
     correctAnswer: "Steal your face right off of your head",
   }
 ];
@@ -349,8 +379,9 @@ function quesh() {
   buttonD.disabled = false;
 }
 
-// displays message and score whenever answer button is clicked and brings user to score page when last answer is clicked
 const onAnswerClick = (event) => {
+  console.log('onAnswerClick')
+  console.log(questions)
   const clickedAnswer = event.target.innerHTML;
   if (clickedAnswer === questions[currentIndex].correctAnswer) {
     result.innerHTML = "Correct!";
@@ -365,6 +396,7 @@ const onAnswerClick = (event) => {
       time = 0;
     }
   }
+  questions[currentIndex].userAnswer = clickedAnswer;
   currentIndex++;
   if (!questions[currentIndex]) {
     goToScore();
@@ -373,35 +405,48 @@ const onAnswerClick = (event) => {
   }
 };
 
-
-
 // creates score page so that scores don't get lost when quiz is taken multiple times. Also stops timer when quiz ends and creates hide score button to hide scores.
 function goToScore() {
   let scoresHTML;
   if (score >= 25) {
     scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> Well dang! You are definitely on the bus! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
-<button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
-<a style="text-decoration:none" href="answerkey.html"><button id="answers">View Answer Key</button></a>
-<h2 id="refresh">Refresh to go back to Main Page.</h2>
+<button id="return" class="scorepage" onclick="restartQuiz()">Retake The Grateful Dead Quiz</button>
+<h1>Answer Key:</h1>
+    <button id="showAnswers" onclick="answerKey()">Show Answers</button>
+    <div id="answers">
+    </div>
+    <h3>Sources:</h3>
+    <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
+    <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
+    <h4>The Setlist Wiki, www.setlist.fm/. Accessed 6 Mar. 2024. </h4>
+    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page.</a></h2>
  </section>`;
   } else if (score >= 15 && score < 20) {
     scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> You have stepped on the bus. Welcome! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
-<button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
-<a style="text-decoration:none" href="answerkey.html"><button id="answers">View Answer Key</button></a>
-<h2 id="refresh">Refresh to go back to Main Page.</h2>
-<h3>Sources:</h3>
-  <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
-  <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
+<button id="return" class="scorepage" onclick="restartQuiz()">Retake The Grateful Dead Quiz</button>
+<h1>Answer Key:</h1>
+    <button id="showAnswers" onclick="answerKey()">Show Answers</button>
+    <div id="answers">
+    </div>
+    <h3>Sources:</h3>
+    <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
+    <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
+    <h4>The Setlist Wiki, www.setlist.fm/. Accessed 6 Mar. 2024. </h4>
+    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page.</a></h2>
  </section>`;
   } else if (score < 10) {
     {
       scoresHTML = `<section class="container"><h1 id="final-score">Final Score: ${score}/${questions.length} <br> The bus is still waitin' for ya! <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/></svg></h1>
-  <button id="return" class="scorepage" onclick="restartQuiz()">Return to The Grateful Dead Quiz</button>
-  <a style="text-decoration:none" href="answerkey.html"><button id="answers">View Answer Key</button></a>
-  <h2 id="refresh">Refresh to go back to Main Page.</h2>
-  <h3>Sources:</h3>
-  <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
-  <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
+  <button id="return" class="scorepage" onclick="restartQuiz()">Retake The Grateful Dead Quiz</button>
+  <h1>Answer Key:</h1>
+    <button id="showAnswers" onclick="answerKey()">Show Answers</button>
+    <div id="answers">
+    </div>
+    <h3>Sources:</h3>
+    <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
+    <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
+    <h4>The Setlist Wiki, www.setlist.fm/. Accessed 6 Mar. 2024. </h4>
+    <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page</a></h2>
  </section>`;
     }
   }
@@ -448,6 +493,7 @@ function answerKey() {
     return `<div>
     <p><h3>Question:</h3>${question.question}</p>
     <p><h3>Choices:</h3>${question.choices.join(' / ')}</p>
+    <p><h3>Your Answer:</h3>${question.userAnswer}</p>
     <p><h3>Correct Answer:</h3>${question.correctAnswer}</p>
     </div>`;
   });

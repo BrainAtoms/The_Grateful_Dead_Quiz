@@ -90,6 +90,15 @@ button {
     padding:10px;
 }
 
+a,#refresh{
+    text-decoration: none;
+    color: royalblue;
+}
+
+a:hover{
+    color:brown;
+}
+
 /* #score {
     margin-right: 20px;
 } */
