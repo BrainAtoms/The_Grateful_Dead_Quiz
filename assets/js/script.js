@@ -194,7 +194,7 @@ const questions = [
   },
   {
     question:
-      "The section of the crowd at a Grateful Dead concert who were drug and alchohol-free were known as?",
+      "The section of the crowd at Grateful Dead concerts who were drug and alchohol-free are known as?",
     choices: [
       "Sugar Magnolias",
       "Uncle John's Band",
@@ -417,8 +417,8 @@ function goToScore() {
     <button id="showAnswers" onclick="answerKey()">Show Answers</button>
     <div id="answers">
     </div>
-    <h3>Sources:</h3>
     <h2 id="refresh"><a style="text-decoration:none" href="index.html">Return To Main Page.</a></h2>
+    <h3>Sources:</h3>
     <h4>McNally, Dennis. A Long Strange Trip. Crown, 18 Dec. 2007.</h4>
     <h4>Wikipedia. “Wikipedia.” Wikipedia.org, Wikimedia Foundation, 15 Jan. 2001, www.wikipedia.org/.</h4>
     <h4>The Setlist Wiki, www.setlist.fm/. Accessed 6 Mar. 2024. </h4>
