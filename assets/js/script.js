@@ -120,7 +120,7 @@ const questions = [
   },
   {
     question:
-      "Which country's basketball team did The Grateful Dead help play in the 1988 Olympics",
+      "Which country's basketball team did The Grateful Dead help play in the 1992 Olympics",
     choices: ["Latvia", "Romania", "Lithuania", "Estonia"],
     userAnser: "",
     correctAnswer: "Lithuania",
