@@ -58,7 +58,7 @@ const questions = [
     correctAnswer: "John Perry Barlow",
   },
   {
-    question: "What year did Keith and Donna Godchaux join The Grateful Dead?",
+    question: "What year did Keith Godchaux join The Grateful Dead?",
     choices: ["1971", "1972", "1970", "1973"],
     userAnser: "",
     correctAnswer: "1971",
